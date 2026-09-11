@@ -1,0 +1,105 @@
+default_model = "dummy"
+backend_priority = ["cuda", "coreml", "mps", "cpu"]
+
+[models.dummy]
+type = "dummy"
+backend = "cpu"
+status = "implemented"
+description = "Synthetic center-circle mask used to validate webcam, rendering, controls, and metrics."
+
+# Source repo: https://github.com/yformer/EfficientSAM
+# Downloaded from:
+#   https://huggingface.co/yunyangx/EfficientSAM/resolve/main/efficientsam_ti_encoder.onnx
+#   https://huggingface.co/yunyangx/EfficientSAM/resolve/main/efficientsam_ti_decoder.onnx
+# Access: public, not gated.
+[models.efficientsam_onnx]
+type = "efficient_sam_onnx"
+backend = "onnx"
+status = "implemented"
+encoder_path = "../models/efficient_sam_encoder.onnx"
+decoder_path = "../models/efficient_sam_decoder.onnx"
+description = "EfficientSAM ONNX split encoder/decoder adapter."
+source = "https://github.com/yformer/EfficientSAM"
+notes = "First real adapter target because it is compact and ONNX-friendly."
+
+# Source repos:
+#   https://github.com/ChaoningZhang/MobileSAM
+#   https://huggingface.co/qualcomm/MobileSam
+# Downloaded from:
+#   https://qaihub-public-assets.s3.us-west-2.amazonaws.com/qai-hub-models/models/mobilesam/releases/v0.62.1/mobilesam-onnx-float.zip
+# Access: public S3 asset, not gated.
+[models.mobile_sam_onnx]
+type = "mobile_sam_onnx"
+backend = "onnx"
+status = "implemented"
+encoder_path = "../models/mobilesam-onnx-float/encoder.onnx"
+decoder_path = "../models/mobilesam-onnx-float/decoder.onnx"
+encoder_data_path = "../models/mobilesam-onnx-float/encoder.data"
+decoder_data_path = "../models/mobilesam-onnx-float/decoder.data"
+description = "MobileSAM ONNX adapter target for faster SAM-family promptable segmentation."
+source = "https://github.com/ChaoningZhang/MobileSAM"
+notes = "Useful comparison target if EfficientSAM quality or exports are not a good fit."
+
+# Source repo: https://github.com/facebookresearch/segment-anything
+# Checkpoint downloaded from:
+#   https://dl.fbaipublicfiles.com/segment_anything/sam_vit_b_01ec64.pth
+# Access: public, not gated.
+# ONNX note: official SAM publishes an export script, not ready-made encoder/decoder
+# files matching this registry. Export from the checkpoint before using this adapter.
+[models.sam_onnx]
+type = "sam_onnx"
+backend = "onnx"
+status = "implemented-needs-export"
+encoder_path = "../models/sam_image_encoder.onnx"
+decoder_path = "../models/sam_mask_decoder.onnx"
+checkpoint_path = "../models/sam_vit_b_01ec64.pth"
+description = "Original Segment Anything ONNX adapter target."
+source = "https://github.com/facebookresearch/segment-anything"
+notes = "Public ViT-B checkpoint is downloaded; ONNX encoder/decoder still need to be exported."
+
+# Source repo: https://github.com/facebookresearch/sam2
+# Downloaded from:
+#   https://dl.fbaipublicfiles.com/segment_anything_2/092824/sam2.1_hiera_tiny.pt
+#   https://raw.githubusercontent.com/facebookresearch/sam2/main/sam2/configs/sam2.1/sam2.1_hiera_t.yaml
+# Access: public, not gated.
+[models.sam2_torch]
+type = "sam2_torch"
+backend = "torch"
+status = "implemented-needs-dependency"
+model_path = "../models/sam2.1_hiera_tiny.pt"
+config_path = "../models/sam2.1_hiera_t.yaml"
+description = "SAM 2.1 PyTorch adapter target for video-native segmentation experiments."
+source = "https://github.com/facebookresearch/sam2"
+notes = "Allowed PyTorch fallback path for temporal/video segmentation comparisons. SAM 2.1 tiny is the current improved tiny checkpoint line."
+
+# Source/docs:
+#   https://github.com/CASIA-LMC-Lab/FastSAM
+#   https://docs.ultralytics.com/models/fast-sam
+# Checkpoint expected at:
+#   ../models/FastSAM-s.pt
+# Access: public model name in Ultralytics; place the checkpoint locally to avoid
+# runtime downloads. FastSAM uses YOLOv8-seg proposal generation plus prompt filtering.
+[models.fastsam_s]
+type = "fastsam"
+backend = "torch"
+status = "implemented-needs-dependency"
+model_path = "../models/FastSAM-s.pt"
+description = "FastSAM small checkpoint via Ultralytics, using the center point as a prompt."
+source = "https://github.com/CASIA-LMC-Lab/FastSAM"
+notes = "Requires ultralytics. Official examples use imgsz=1024, but this adapter uses the current app resolution for speed."
+
+# Source repo: https://github.com/NVIDIA-AI-IOT/nanosam
+# NVIDIA README links ONNX source files through Google Drive:
+#   https://drive.google.com/file/d/1jYNvnseTL49SNRx9PDcbkZ9DwsY8up7n/view
+#   https://drive.google.com/file/d/14-SsvoaTl-esC3JOzomHDnI9OGgdO2OR/view
+# Access: redirected curl to Google sign-in in this environment.
+# TensorRT note: .engine files are target-specific and must be built locally.
+[models.nanosam_trt]
+type = "nanosam_trt"
+backend = "tensorrt"
+status = "implemented-needs-engines"
+encoder_engine_path = "../models/nanosam_encoder.engine"
+decoder_engine_path = "../models/nanosam_decoder.engine"
+description = "NVIDIA NanoSAM/TensorRT adapter target for CUDA edge or desktop experiments."
+source = "https://github.com/NVIDIA-AI-IOT/nanosam"
+notes = "Relevant when NVIDIA/TensorRT latency is the main constraint. NVIDIA's ONNX links currently redirect to Google sign-in from curl; TensorRT engines must be built locally for the target GPU/TensorRT version."
