@@ -10,7 +10,7 @@ from .types import RuntimeSettings
 
 
 def build_parser() -> argparse.ArgumentParser:
-    parser = argparse.ArgumentParser(description="Realtime webcam segmentation experiment.")
+    parser = argparse.ArgumentParser(description="Realtime webcam segmentation experiment.", formatter_class=argparse.ArgumentDefaultsHelpFormatter)
     parser.add_argument("--config", type=Path, default=Path("config/models.toml"), help="Path to TOML model registry.")
     parser.add_argument("--list-models", action="store_true", help="List registered models and exit.")
     parser.add_argument("--model", help="Model name from the registry. Defaults to default_model.")
