@@ -32,10 +32,13 @@ class FastSamSegmenter(Segmenter):
     ) -> SegmenterOutput:
         height, width = frame_rgb.shape[:2]
         point = (width // 2, height // 2)
+        # Ultralytics treats NumPy images as BGR and converts them to RGB internally.
+        # The app supplies RGB, so convert back to BGR at this adapter boundary.
+        frame_bgr = np.ascontiguousarray(frame_rgb[..., ::-1])
 
         def run_model():
             return self.model_impl(
-                frame_rgb,
+                frame_bgr,
                 device=_ultralytics_device(self.backend),
                 retina_masks=True,
                 imgsz=settings.input_long_side,
