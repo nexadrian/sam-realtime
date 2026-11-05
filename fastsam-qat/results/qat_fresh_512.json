@@ -1,0 +1,4909 @@
+{
+  "frames": [
+    "0001.jpg",
+    "0002.jpg",
+    "0003.jpg",
+    "0004.jpg",
+    "0005.jpg",
+    "0006.jpg",
+    "0007.jpg",
+    "0008.jpg",
+    "0009.jpg",
+    "0010.jpg",
+    "0011.jpg",
+    "0012.jpg",
+    "0013.jpg",
+    "0014.jpg",
+    "0015.jpg",
+    "0016.jpg",
+    "0017.jpg",
+    "0018.jpg",
+    "0019.jpg",
+    "0020.jpg",
+    "0021.jpg",
+    "0022.jpg",
+    "0023.jpg",
+    "0024.jpg",
+    "0025.jpg",
+    "0026.jpg",
+    "0027.jpg",
+    "0028.jpg",
+    "0029.jpg",
+    "0030.jpg",
+    "0031.jpg",
+    "0032.jpg",
+    "0033.jpg",
+    "0034.jpg",
+    "0035.jpg",
+    "0036.jpg",
+    "0037.jpg",
+    "0038.jpg",
+    "0039.jpg",
+    "0040.jpg"
+  ],
+  "float_model": "models/fastsam_litert/FastSAM-s_512_float.tflite",
+  "models": {
+    "stock_int8": "models/fastsam_litert/FastSAM-s_512_int8.tflite",
+    "split_int8": "models/fastsam_litert/FastSAM-s_512_split_int8.tflite",
+    "pct9999_int8": "models/fastsam_litert/FastSAM-s_512_pct9999_int8.tflite",
+    "qat1_float": "models/fastsam_litert/FastSAM-s_512_qat_epoch1_float.tflite",
+    "qat1_int8": "models/fastsam_litert/FastSAM-s_512_qat_epoch1_int8.tflite",
+    "qat2_float": "models/fastsam_litert/FastSAM-s_512_qat_epoch2_float.tflite",
+    "qat2_int8": "models/fastsam_litert/FastSAM-s_512_qat_epoch2_int8.tflite"
+  },
+  "comparisons": {
+    "stock_int8": {
+      "count_agreement": 0.175,
+      "median_mask_iou": 0.9215712033631108,
+      "median_paired_mask_iou": 0.9691475755603922,
+      "median_union_mask_iou": 0.9689492354559455,
+      "mask_pairs": 157,
+      "per_frame": [
+        {
+          "name": "0001.jpg",
+          "reference_count": 3,
+          "candidate_count": 3,
+          "count_match": true,
+          "ious": [
+            0.986743193823649,
+            0.9229675019148703,
+            0.9032735504091938
+          ],
+          "paired_ious": [
+            0.986743193823649,
+            0.9229675019148703,
+            0.9032735504091938
+          ],
+          "union_iou": 0.9476598862265126
+        },
+        {
+          "name": "0002.jpg",
+          "reference_count": 3,
+          "candidate_count": 3,
+          "count_match": true,
+          "ious": [
+            0.9773139745916516,
+            0.9615859574843433,
+            0.5041367351994055
+          ],
+          "paired_ious": [
+            0.9773139745916516,
+            0.9615859574843433,
+            0.5041367351994055
+          ],
+          "union_iou": 0.9711794623395495
+        },
+        {
+          "name": "0003.jpg",
+          "reference_count": 2,
+          "candidate_count": 3,
+          "count_match": false,
+          "ious": [
+            0.9811564274651523,
+            0.9530882643756454,
+            0.0
+          ],
+          "paired_ious": [
+            0.9811564274651523,
+            0.9530882643756454
+          ],
+          "union_iou": 0.9668173638239038
+        },
+        {
+          "name": "0004.jpg",
+          "reference_count": 2,
+          "candidate_count": 5,
+          "count_match": false,
+          "ious": [
+            0.9862076064021409,
+            0.9524025092155468,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "paired_ious": [
+            0.9862076064021409,
+            0.9524025092155468
+          ],
+          "union_iou": 0.9526949850218746
+        },
+        {
+          "name": "0005.jpg",
+          "reference_count": 2,
+          "candidate_count": 3,
+          "count_match": false,
+          "ious": [
+            0.9849612638614613,
+            0.9502173307924544,
+            0.0
+          ],
+          "paired_ious": [
+            0.9849612638614613,
+            0.9502173307924544
+          ],
+          "union_iou": 0.9534754322889916
+        },
+        {
+          "name": "0006.jpg",
+          "reference_count": 2,
+          "candidate_count": 4,
+          "count_match": false,
+          "ious": [
+            0.9621642815134287,
+            0.9617263031994419,
+            0.0,
+            0.0
+          ],
+          "paired_ious": [
+            0.9621642815134287,
+            0.9617263031994419
+          ],
+          "union_iou": 0.9662558748998289
+        },
+        {
+          "name": "0007.jpg",
+          "reference_count": 2,
+          "candidate_count": 3,
+          "count_match": false,
+          "ious": [
+            0.9546579091406677,
+            0.952249586196519,
+            0.0
+          ],
+          "paired_ious": [
+            0.9546579091406677,
+            0.952249586196519
+          ],
+          "union_iou": 0.9811717294275686
+        },
+        {
+          "name": "0008.jpg",
+          "reference_count": 3,
+          "candidate_count": 6,
+          "count_match": false,
+          "ious": [
+            0.9795980666497075,
+            0.9699058322540992,
+            0.45087842927611593,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "paired_ious": [
+            0.9795980666497075,
+            0.9699058322540992,
+            0.45087842927611593
+          ],
+          "union_iou": 0.9688571002831172
+        },
+        {
+          "name": "0009.jpg",
+          "reference_count": 2,
+          "candidate_count": 5,
+          "count_match": false,
+          "ious": [
+            0.9731025299600533,
+            0.9691475755603922,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "paired_ious": [
+            0.9731025299600533,
+            0.9691475755603922
+          ],
+          "union_iou": 0.9845180548439554
+        },
+        {
+          "name": "0010.jpg",
+          "reference_count": 2,
+          "candidate_count": 5,
+          "count_match": false,
+          "ious": [
+            0.9825669106554171,
+            0.9702949681897051,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "paired_ious": [
+            0.9825669106554171,
+            0.9702949681897051
+          ],
+          "union_iou": 0.9698087275226206
+        },
+        {
+          "name": "0011.jpg",
+          "reference_count": 2,
+          "candidate_count": 3,
+          "count_match": false,
+          "ious": [
+            0.9800493403410919,
+            0.9719871941458953,
+            0.0
+          ],
+          "paired_ious": [
+            0.9800493403410919,
+            0.9719871941458953
+          ],
+          "union_iou": 0.9766056511617291
+        },
+        {
+          "name": "0012.jpg",
+          "reference_count": 2,
+          "candidate_count": 4,
+          "count_match": false,
+          "ious": [
+            0.9885939444214019,
+            0.9614340500710993,
+            0.0,
+            0.0
+          ],
+          "paired_ious": [
+            0.9885939444214019,
+            0.9614340500710993
+          ],
+          "union_iou": 0.9825219011716324
+        },
+        {
+          "name": "0013.jpg",
+          "reference_count": 2,
+          "candidate_count": 5,
+          "count_match": false,
+          "ious": [
+            0.9819758055598558,
+            0.9632146933693058,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "paired_ious": [
+            0.9819758055598558,
+            0.9632146933693058
+          ],
+          "union_iou": 0.9829136690647482
+        },
+        {
+          "name": "0014.jpg",
+          "reference_count": 2,
+          "candidate_count": 4,
+          "count_match": false,
+          "ious": [
+            0.9720512763546688,
+            0.9599708879184862,
+            0.0,
+            0.0
+          ],
+          "paired_ious": [
+            0.9720512763546688,
+            0.9599708879184862
+          ],
+          "union_iou": 0.9718155997378195
+        },
+        {
+          "name": "0015.jpg",
+          "reference_count": 2,
+          "candidate_count": 4,
+          "count_match": false,
+          "ious": [
+            0.9891577204507824,
+            0.9676846670711702,
+            0.0,
+            0.0
+          ],
+          "paired_ious": [
+            0.9891577204507824,
+            0.9676846670711702
+          ],
+          "union_iou": 0.9708135471731923
+        },
+        {
+          "name": "0016.jpg",
+          "reference_count": 2,
+          "candidate_count": 4,
+          "count_match": false,
+          "ious": [
+            0.9710043820445181,
+            0.9700279532042655,
+            0.0,
+            0.0
+          ],
+          "paired_ious": [
+            0.9710043820445181,
+            0.9700279532042655
+          ],
+          "union_iou": 0.9783048077750065
+        },
+        {
+          "name": "0017.jpg",
+          "reference_count": 2,
+          "candidate_count": 3,
+          "count_match": false,
+          "ious": [
+            0.9632590315142199,
+            0.9215712033631108,
+            0.0
+          ],
+          "paired_ious": [
+            0.9632590315142199,
+            0.9215712033631108
+          ],
+          "union_iou": 0.9412189359467973
+        },
+        {
+          "name": "0018.jpg",
+          "reference_count": 3,
+          "candidate_count": 3,
+          "count_match": true,
+          "ious": [
+            0.9870816335482739,
+            0.9800292001251434,
+            0.21080867666867945
+          ],
+          "paired_ious": [
+            0.9870816335482739,
+            0.9800292001251434,
+            0.21080867666867945
+          ],
+          "union_iou": 0.9661501686088702
+        },
+        {
+          "name": "0019.jpg",
+          "reference_count": 3,
+          "candidate_count": 4,
+          "count_match": false,
+          "ious": [
+            0.991752847231313,
+            0.9799270072992701,
+            0.9060658264575211,
+            0.0
+          ],
+          "paired_ious": [
+            0.991752847231313,
+            0.9799270072992701,
+            0.9060658264575211
+          ],
+          "union_iou": 0.9872976761969497
+        },
+        {
+          "name": "0020.jpg",
+          "reference_count": 4,
+          "candidate_count": 4,
+          "count_match": true,
+          "ious": [
+            0.9807632640397146,
+            0.9026347668079951,
+            0.4354956091407501,
+            0.14881928137876035
+          ],
+          "paired_ious": [
+            0.9807632640397146,
+            0.9026347668079951,
+            0.4354956091407501,
+            0.14881928137876035
+          ],
+          "union_iou": 0.9394890944581177
+        },
+        {
+          "name": "0021.jpg",
+          "reference_count": 2,
+          "candidate_count": 5,
+          "count_match": false,
+          "ious": [
+            0.9874696412835557,
+            0.985617073925147,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "paired_ious": [
+            0.9874696412835557,
+            0.985617073925147
+          ],
+          "union_iou": 0.9873537102927937
+        },
+        {
+          "name": "0022.jpg",
+          "reference_count": 2,
+          "candidate_count": 3,
+          "count_match": false,
+          "ious": [
+            0.9784340091021928,
+            0.9308951965065502,
+            0.0
+          ],
+          "paired_ious": [
+            0.9784340091021928,
+            0.9308951965065502
+          ],
+          "union_iou": 0.9499912762802059
+        },
+        {
+          "name": "0023.jpg",
+          "reference_count": 2,
+          "candidate_count": 4,
+          "count_match": false,
+          "ious": [
+            0.9875637423249037,
+            0.979754033039695,
+            0.0,
+            0.0
+          ],
+          "paired_ious": [
+            0.9875637423249037,
+            0.979754033039695
+          ],
+          "union_iou": 0.9878686556927297
+        },
+        {
+          "name": "0024.jpg",
+          "reference_count": 4,
+          "candidate_count": 3,
+          "count_match": false,
+          "ious": [
+            0.9825569358178053,
+            0.9724367247828846,
+            0.4389363814690141,
+            0.0
+          ],
+          "paired_ious": [
+            0.9825569358178053,
+            0.9724367247828846,
+            0.4389363814690141
+          ],
+          "union_iou": 0.9565198830284531
+        },
+        {
+          "name": "0025.jpg",
+          "reference_count": 2,
+          "candidate_count": 3,
+          "count_match": false,
+          "ious": [
+            0.9667113955408753,
+            0.9081336857362095,
+            0.0
+          ],
+          "paired_ious": [
+            0.9667113955408753,
+            0.9081336857362095
+          ],
+          "union_iou": 0.9386626979908579
+        },
+        {
+          "name": "0026.jpg",
+          "reference_count": 2,
+          "candidate_count": 4,
+          "count_match": false,
+          "ious": [
+            0.9812018489984592,
+            0.958424133658078,
+            0.0,
+            0.0
+          ],
+          "paired_ious": [
+            0.9812018489984592,
+            0.958424133658078
+          ],
+          "union_iou": 0.9690413706287738
+        },
+        {
+          "name": "0027.jpg",
+          "reference_count": 3,
+          "candidate_count": 3,
+          "count_match": true,
+          "ious": [
+            0.9875512215363867,
+            0.9501453551438365,
+            0.9354252238906471
+          ],
+          "paired_ious": [
+            0.9875512215363867,
+            0.9501453551438365,
+            0.9354252238906471
+          ],
+          "union_iou": 0.9493122331939114
+        },
+        {
+          "name": "0028.jpg",
+          "reference_count": 2,
+          "candidate_count": 5,
+          "count_match": false,
+          "ious": [
+            0.9898711065707393,
+            0.9455707027516475,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "paired_ious": [
+            0.9898711065707393,
+            0.9455707027516475
+          ],
+          "union_iou": 0.9888183741311575
+        },
+        {
+          "name": "0029.jpg",
+          "reference_count": 2,
+          "candidate_count": 5,
+          "count_match": false,
+          "ious": [
+            0.9801670146137788,
+            0.9177037421139055,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "paired_ious": [
+            0.9801670146137788,
+            0.9177037421139055
+          ],
+          "union_iou": 0.9578002919206663
+        },
+        {
+          "name": "0030.jpg",
+          "reference_count": 3,
+          "candidate_count": 7,
+          "count_match": false,
+          "ious": [
+            0.9866390471258415,
+            0.9633871404094148,
+            0.954201599172396,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "paired_ious": [
+            0.9866390471258415,
+            0.9633871404094148,
+            0.954201599172396
+          ],
+          "union_iou": 0.9739279516611261
+        },
+        {
+          "name": "0031.jpg",
+          "reference_count": 2,
+          "candidate_count": 3,
+          "count_match": false,
+          "ious": [
+            0.9873964527112873,
+            0.9356248116740562,
+            0.0
+          ],
+          "paired_ious": [
+            0.9873964527112873,
+            0.9356248116740562
+          ],
+          "union_iou": 0.9572748764238126
+        },
+        {
+          "name": "0032.jpg",
+          "reference_count": 3,
+          "candidate_count": 3,
+          "count_match": true,
+          "ious": [
+            0.9804823785205036,
+            0.9747087119187601,
+            0.8810864594800576
+          ],
+          "paired_ious": [
+            0.9804823785205036,
+            0.9747087119187601,
+            0.8810864594800576
+          ],
+          "union_iou": 0.9693242535358827
+        },
+        {
+          "name": "0033.jpg",
+          "reference_count": 3,
+          "candidate_count": 4,
+          "count_match": false,
+          "ious": [
+            0.9805839931413586,
+            0.935742885895981,
+            0.22313576401612312,
+            0.0
+          ],
+          "paired_ious": [
+            0.9805839931413586,
+            0.935742885895981,
+            0.22313576401612312
+          ],
+          "union_iou": 0.9410121797564048
+        },
+        {
+          "name": "0034.jpg",
+          "reference_count": 2,
+          "candidate_count": 4,
+          "count_match": false,
+          "ious": [
+            0.9803882329397638,
+            0.9716093063149994,
+            0.0,
+            0.0
+          ],
+          "paired_ious": [
+            0.9803882329397638,
+            0.9716093063149994
+          ],
+          "union_iou": 0.9745038328257902
+        },
+        {
+          "name": "0035.jpg",
+          "reference_count": 2,
+          "candidate_count": 3,
+          "count_match": false,
+          "ious": [
+            0.9774622264894638,
+            0.9691767460007803,
+            0.0
+          ],
+          "paired_ious": [
+            0.9774622264894638,
+            0.9691767460007803
+          ],
+          "union_iou": 0.9837204771285692
+        },
+        {
+          "name": "0036.jpg",
+          "reference_count": 2,
+          "candidate_count": 3,
+          "count_match": false,
+          "ious": [
+            0.9690844825011201,
+            0.959378786209935,
+            0.0
+          ],
+          "paired_ious": [
+            0.9690844825011201,
+            0.959378786209935
+          ],
+          "union_iou": 0.9563015260480617
+        },
+        {
+          "name": "0037.jpg",
+          "reference_count": 3,
+          "candidate_count": 4,
+          "count_match": false,
+          "ious": [
+            0.9793107935199844,
+            0.9779063388359683,
+            0.44512326086437726,
+            0.0
+          ],
+          "paired_ious": [
+            0.9793107935199844,
+            0.9779063388359683,
+            0.44512326086437726
+          ],
+          "union_iou": 0.9845900787810579
+        },
+        {
+          "name": "0038.jpg",
+          "reference_count": 2,
+          "candidate_count": 4,
+          "count_match": false,
+          "ious": [
+            0.9854839603302122,
+            0.9458946819356522,
+            0.0,
+            0.0
+          ],
+          "paired_ious": [
+            0.9854839603302122,
+            0.9458946819356522
+          ],
+          "union_iou": 0.904051936422655
+        },
+        {
+          "name": "0039.jpg",
+          "reference_count": 3,
+          "candidate_count": 5,
+          "count_match": false,
+          "ious": [
+            0.9782224502593923,
+            0.9419723021671217,
+            0.9170366852665321,
+            0.0,
+            0.0
+          ],
+          "paired_ious": [
+            0.9782224502593923,
+            0.9419723021671217,
+            0.9170366852665321
+          ],
+          "union_iou": 0.9323203110183956
+        },
+        {
+          "name": "0040.jpg",
+          "reference_count": 3,
+          "candidate_count": 3,
+          "count_match": true,
+          "ious": [
+            0.9457228081389155,
+            0.9250794865052234,
+            0.01662966857498929
+          ],
+          "paired_ious": [
+            0.9457228081389155,
+            0.9250794865052234,
+            0.01662966857498929
+          ],
+          "union_iou": 0.8852096627164996
+        }
+      ]
+    },
+    "split_int8": {
+      "count_agreement": 0.175,
+      "median_mask_iou": 0.941464889733676,
+      "median_paired_mask_iou": 0.9643934234847747,
+      "median_union_mask_iou": 0.958331276983859,
+      "mask_pairs": 153,
+      "per_frame": [
+        {
+          "name": "0001.jpg",
+          "reference_count": 3,
+          "candidate_count": 4,
+          "count_match": false,
+          "ious": [
+            0.9875222816399287,
+            0.957252641690682,
+            0.9430693610049153,
+            0.0
+          ],
+          "paired_ious": [
+            0.9875222816399287,
+            0.957252641690682,
+            0.9430693610049153
+          ],
+          "union_iou": 0.9718162169102699
+        },
+        {
+          "name": "0002.jpg",
+          "reference_count": 3,
+          "candidate_count": 4,
+          "count_match": false,
+          "ious": [
+            0.9466830090393749,
+            0.9315318118180405,
+            0.4812784294948528,
+            0.0
+          ],
+          "paired_ious": [
+            0.9466830090393749,
+            0.9315318118180405,
+            0.4812784294948528
+          ],
+          "union_iou": 0.9393100465015681
+        },
+        {
+          "name": "0003.jpg",
+          "reference_count": 2,
+          "candidate_count": 4,
+          "count_match": false,
+          "ious": [
+            0.9824724198370967,
+            0.9481743748616951,
+            0.0,
+            0.0
+          ],
+          "paired_ious": [
+            0.9824724198370967,
+            0.9481743748616951
+          ],
+          "union_iou": 0.9519866824374644
+        },
+        {
+          "name": "0004.jpg",
+          "reference_count": 2,
+          "candidate_count": 4,
+          "count_match": false,
+          "ious": [
+            0.987217659137577,
+            0.9437320073279246,
+            0.0,
+            0.0
+          ],
+          "paired_ious": [
+            0.987217659137577,
+            0.9437320073279246
+          ],
+          "union_iou": 0.943775361847102
+        },
+        {
+          "name": "0005.jpg",
+          "reference_count": 2,
+          "candidate_count": 4,
+          "count_match": false,
+          "ious": [
+            0.9832936769098365,
+            0.9289843817413064,
+            0.0,
+            0.0
+          ],
+          "paired_ious": [
+            0.9832936769098365,
+            0.9289843817413064
+          ],
+          "union_iou": 0.9313902114699952
+        },
+        {
+          "name": "0006.jpg",
+          "reference_count": 2,
+          "candidate_count": 4,
+          "count_match": false,
+          "ious": [
+            0.9642026043471803,
+            0.9442386515573286,
+            0.0,
+            0.0
+          ],
+          "paired_ious": [
+            0.9642026043471803,
+            0.9442386515573286
+          ],
+          "union_iou": 0.946484050234105
+        },
+        {
+          "name": "0007.jpg",
+          "reference_count": 2,
+          "candidate_count": 2,
+          "count_match": true,
+          "ious": [
+            0.9662790952287109,
+            0.9655862344937975
+          ],
+          "paired_ious": [
+            0.9662790952287109,
+            0.9655862344937975
+          ],
+          "union_iou": 0.9663041813447695
+        },
+        {
+          "name": "0008.jpg",
+          "reference_count": 3,
+          "candidate_count": 5,
+          "count_match": false,
+          "ious": [
+            0.992194320340985,
+            0.9571554541210644,
+            0.9504168494953927,
+            0.0,
+            0.0
+          ],
+          "paired_ious": [
+            0.992194320340985,
+            0.9571554541210644,
+            0.9504168494953927
+          ],
+          "union_iou": 0.9646044341225297
+        },
+        {
+          "name": "0009.jpg",
+          "reference_count": 2,
+          "candidate_count": 2,
+          "count_match": true,
+          "ious": [
+            0.9856283600361953,
+            0.9581324079498851
+          ],
+          "paired_ious": [
+            0.9856283600361953,
+            0.9581324079498851
+          ],
+          "union_iou": 0.958567890114839
+        },
+        {
+          "name": "0010.jpg",
+          "reference_count": 2,
+          "candidate_count": 3,
+          "count_match": false,
+          "ious": [
+            0.9787698857270895,
+            0.9213963649886115,
+            0.0
+          ],
+          "paired_ious": [
+            0.9787698857270895,
+            0.9213963649886115
+          ],
+          "union_iou": 0.9217421602787457
+        },
+        {
+          "name": "0011.jpg",
+          "reference_count": 2,
+          "candidate_count": 3,
+          "count_match": false,
+          "ious": [
+            0.9839230024733843,
+            0.9412964852081981,
+            0.0
+          ],
+          "paired_ious": [
+            0.9839230024733843,
+            0.9412964852081981
+          ],
+          "union_iou": 0.9420085193073433
+        },
+        {
+          "name": "0012.jpg",
+          "reference_count": 2,
+          "candidate_count": 3,
+          "count_match": false,
+          "ious": [
+            0.9850746268656716,
+            0.969017485608331,
+            0.0
+          ],
+          "paired_ious": [
+            0.9850746268656716,
+            0.969017485608331
+          ],
+          "union_iou": 0.9710916861751251
+        },
+        {
+          "name": "0013.jpg",
+          "reference_count": 2,
+          "candidate_count": 4,
+          "count_match": false,
+          "ious": [
+            0.9667691025574249,
+            0.944405192970061,
+            0.0,
+            0.0
+          ],
+          "paired_ious": [
+            0.9667691025574249,
+            0.944405192970061
+          ],
+          "union_iou": 0.9464686963034762
+        },
+        {
+          "name": "0014.jpg",
+          "reference_count": 2,
+          "candidate_count": 7,
+          "count_match": false,
+          "ious": [
+            0.9752061746669486,
+            0.9400026874496104,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "paired_ious": [
+            0.9752061746669486,
+            0.9400026874496104
+          ],
+          "union_iou": 0.9757997901457817
+        },
+        {
+          "name": "0015.jpg",
+          "reference_count": 2,
+          "candidate_count": 4,
+          "count_match": false,
+          "ious": [
+            0.9869797225186766,
+            0.9315096160319561,
+            0.0,
+            0.0
+          ],
+          "paired_ious": [
+            0.9869797225186766,
+            0.9315096160319561
+          ],
+          "union_iou": 0.9344738901934474
+        },
+        {
+          "name": "0016.jpg",
+          "reference_count": 2,
+          "candidate_count": 4,
+          "count_match": false,
+          "ious": [
+            0.9732333489558923,
+            0.955820752247142,
+            0.0,
+            0.0
+          ],
+          "paired_ious": [
+            0.9732333489558923,
+            0.955820752247142
+          ],
+          "union_iou": 0.955100707675558
+        },
+        {
+          "name": "0017.jpg",
+          "reference_count": 2,
+          "candidate_count": 2,
+          "count_match": true,
+          "ious": [
+            0.9703437660338635,
+            0.9381651416408838
+          ],
+          "paired_ious": [
+            0.9703437660338635,
+            0.9381651416408838
+          ],
+          "union_iou": 0.9386336221076872
+        },
+        {
+          "name": "0018.jpg",
+          "reference_count": 3,
+          "candidate_count": 5,
+          "count_match": false,
+          "ious": [
+            0.9862532137048113,
+            0.9683054892601431,
+            0.9465978928884987,
+            0.0,
+            0.0
+          ],
+          "paired_ious": [
+            0.9862532137048113,
+            0.9683054892601431,
+            0.9465978928884987
+          ],
+          "union_iou": 0.9589272719489748
+        },
+        {
+          "name": "0019.jpg",
+          "reference_count": 3,
+          "candidate_count": 4,
+          "count_match": false,
+          "ious": [
+            0.9795704557359874,
+            0.9476051172335502,
+            0.9356687898089172,
+            0.0
+          ],
+          "paired_ious": [
+            0.9795704557359874,
+            0.9476051172335502,
+            0.9356687898089172
+          ],
+          "union_iou": 0.9588338018570577
+        },
+        {
+          "name": "0020.jpg",
+          "reference_count": 4,
+          "candidate_count": 5,
+          "count_match": false,
+          "ious": [
+            0.9850792663972645,
+            0.9774378585086042,
+            0.9634138402447757,
+            0.9463716301091893,
+            0.0
+          ],
+          "paired_ious": [
+            0.9850792663972645,
+            0.9774378585086042,
+            0.9634138402447757,
+            0.9463716301091893
+          ],
+          "union_iou": 0.9755287909094779
+        },
+        {
+          "name": "0021.jpg",
+          "reference_count": 2,
+          "candidate_count": 4,
+          "count_match": false,
+          "ious": [
+            0.9864349081906334,
+            0.9570385683829705,
+            0.0,
+            0.0
+          ],
+          "paired_ious": [
+            0.9864349081906334,
+            0.9570385683829705
+          ],
+          "union_iou": 0.958059245883314
+        },
+        {
+          "name": "0022.jpg",
+          "reference_count": 2,
+          "candidate_count": 5,
+          "count_match": false,
+          "ious": [
+            0.986621270651913,
+            0.9624376558603491,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "paired_ious": [
+            0.986621270651913,
+            0.9624376558603491
+          ],
+          "union_iou": 0.9727602389078498
+        },
+        {
+          "name": "0023.jpg",
+          "reference_count": 2,
+          "candidate_count": 3,
+          "count_match": false,
+          "ious": [
+            0.9857928030695842,
+            0.9844904465458932,
+            0.0
+          ],
+          "paired_ious": [
+            0.9857928030695842,
+            0.9844904465458932
+          ],
+          "union_iou": 0.9864800861141012
+        },
+        {
+          "name": "0024.jpg",
+          "reference_count": 4,
+          "candidate_count": 3,
+          "count_match": false,
+          "ious": [
+            0.9823187804625116,
+            0.9409663635367591,
+            0.4213873237790195,
+            0.0
+          ],
+          "paired_ious": [
+            0.9823187804625116,
+            0.9409663635367591,
+            0.4213873237790195
+          ],
+          "union_iou": 0.9221270322814964
+        },
+        {
+          "name": "0025.jpg",
+          "reference_count": 2,
+          "candidate_count": 2,
+          "count_match": true,
+          "ious": [
+            0.9722121977625406,
+            0.9587421655500324
+          ],
+          "paired_ious": [
+            0.9722121977625406,
+            0.9587421655500324
+          ],
+          "union_iou": 0.9587212441948375
+        },
+        {
+          "name": "0026.jpg",
+          "reference_count": 2,
+          "candidate_count": 2,
+          "count_match": true,
+          "ious": [
+            0.9865422295555326,
+            0.9236545951412648
+          ],
+          "paired_ious": [
+            0.9865422295555326,
+            0.9236545951412648
+          ],
+          "union_iou": 0.9236278389538886
+        },
+        {
+          "name": "0027.jpg",
+          "reference_count": 3,
+          "candidate_count": 4,
+          "count_match": false,
+          "ious": [
+            0.9878621972005578,
+            0.9621502046233824,
+            0.8804714532871972,
+            0.0
+          ],
+          "paired_ious": [
+            0.9878621972005578,
+            0.9621502046233824,
+            0.8804714532871972
+          ],
+          "union_iou": 0.9580946638528791
+        },
+        {
+          "name": "0028.jpg",
+          "reference_count": 2,
+          "candidate_count": 5,
+          "count_match": false,
+          "ious": [
+            0.9654617666281232,
+            0.9556944173230055,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "paired_ious": [
+            0.9654617666281232,
+            0.9556944173230055
+          ],
+          "union_iou": 0.9464049216046482
+        },
+        {
+          "name": "0029.jpg",
+          "reference_count": 2,
+          "candidate_count": 5,
+          "count_match": false,
+          "ious": [
+            0.9867021276595744,
+            0.941464889733676,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "paired_ious": [
+            0.9867021276595744,
+            0.941464889733676
+          ],
+          "union_iou": 0.9398957705228702
+        },
+        {
+          "name": "0030.jpg",
+          "reference_count": 3,
+          "candidate_count": 4,
+          "count_match": false,
+          "ious": [
+            0.9876527192128879,
+            0.9868216249870292,
+            0.9603217642805495,
+            0.0
+          ],
+          "paired_ious": [
+            0.9876527192128879,
+            0.9868216249870292,
+            0.9603217642805495
+          ],
+          "union_iou": 0.9839922078472061
+        },
+        {
+          "name": "0031.jpg",
+          "reference_count": 2,
+          "candidate_count": 4,
+          "count_match": false,
+          "ious": [
+            0.9763098649201801,
+            0.9528478762148999,
+            0.0,
+            0.0
+          ],
+          "paired_ious": [
+            0.9763098649201801,
+            0.9528478762148999
+          ],
+          "union_iou": 0.9560219997421905
+        },
+        {
+          "name": "0032.jpg",
+          "reference_count": 3,
+          "candidate_count": 2,
+          "count_match": false,
+          "ious": [
+            0.9732183616535632,
+            0.9493066849268167,
+            0.0
+          ],
+          "paired_ious": [
+            0.9732183616535632,
+            0.9493066849268167
+          ],
+          "union_iou": 0.9331614688128773
+        },
+        {
+          "name": "0033.jpg",
+          "reference_count": 3,
+          "candidate_count": 2,
+          "count_match": false,
+          "ious": [
+            0.9820498558932093,
+            0.976727725108318,
+            0.0
+          ],
+          "paired_ious": [
+            0.9820498558932093,
+            0.976727725108318
+          ],
+          "union_iou": 0.9587357700481872
+        },
+        {
+          "name": "0034.jpg",
+          "reference_count": 2,
+          "candidate_count": 3,
+          "count_match": false,
+          "ious": [
+            0.9749248604551309,
+            0.9684057680753054,
+            0.0
+          ],
+          "paired_ious": [
+            0.9749248604551309,
+            0.9684057680753054
+          ],
+          "union_iou": 0.9720744396726706
+        },
+        {
+          "name": "0035.jpg",
+          "reference_count": 2,
+          "candidate_count": 2,
+          "count_match": true,
+          "ious": [
+            0.9819581061107997,
+            0.9612379546835663
+          ],
+          "paired_ious": [
+            0.9819581061107997,
+            0.9612379546835663
+          ],
+          "union_iou": 0.9614216940625406
+        },
+        {
+          "name": "0036.jpg",
+          "reference_count": 2,
+          "candidate_count": 3,
+          "count_match": false,
+          "ious": [
+            0.9715112508107568,
+            0.9587694748672293,
+            0.0
+          ],
+          "paired_ious": [
+            0.9715112508107568,
+            0.9587694748672293
+          ],
+          "union_iou": 0.9592361126233042
+        },
+        {
+          "name": "0037.jpg",
+          "reference_count": 3,
+          "candidate_count": 3,
+          "count_match": true,
+          "ious": [
+            0.9750598563447725,
+            0.9614820329778615,
+            0.4315959409594096
+          ],
+          "paired_ious": [
+            0.9750598563447725,
+            0.9614820329778615,
+            0.4315959409594096
+          ],
+          "union_iou": 0.9665959818988697
+        },
+        {
+          "name": "0038.jpg",
+          "reference_count": 2,
+          "candidate_count": 4,
+          "count_match": false,
+          "ious": [
+            0.9875361673714668,
+            0.9419399395108475,
+            0.0,
+            0.0
+          ],
+          "paired_ious": [
+            0.9875361673714668,
+            0.9419399395108475
+          ],
+          "union_iou": 0.9474898332897334
+        },
+        {
+          "name": "0039.jpg",
+          "reference_count": 3,
+          "candidate_count": 6,
+          "count_match": false,
+          "ious": [
+            0.9778631127174159,
+            0.9643934234847747,
+            0.9267716914775739,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "paired_ious": [
+            0.9778631127174159,
+            0.9643934234847747,
+            0.9267716914775739
+          ],
+          "union_iou": 0.9683906674936781
+        },
+        {
+          "name": "0040.jpg",
+          "reference_count": 3,
+          "candidate_count": 7,
+          "count_match": false,
+          "ious": [
+            0.9727118921573978,
+            0.9566639411283728,
+            0.9201258012628142,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "paired_ious": [
+            0.9727118921573978,
+            0.9566639411283728,
+            0.9201258012628142
+          ],
+          "union_iou": 0.9699776938134475
+        }
+      ]
+    },
+    "pct9999_int8": {
+      "count_agreement": 0.025,
+      "median_mask_iou": 0.0,
+      "median_paired_mask_iou": 0.9785652461687286,
+      "median_union_mask_iou": 0.971425057928664,
+      "mask_pairs": 209,
+      "per_frame": [
+        {
+          "name": "0001.jpg",
+          "reference_count": 3,
+          "candidate_count": 4,
+          "count_match": false,
+          "ious": [
+            0.9819897084048027,
+            0.9621122889674126,
+            0.94658232668345,
+            0.0
+          ],
+          "paired_ious": [
+            0.9819897084048027,
+            0.9621122889674126,
+            0.94658232668345
+          ],
+          "union_iou": 0.9522966726356556
+        },
+        {
+          "name": "0002.jpg",
+          "reference_count": 3,
+          "candidate_count": 5,
+          "count_match": false,
+          "ious": [
+            0.9795773554781915,
+            0.9757508116883117,
+            0.9209782714605865,
+            0.0,
+            0.0
+          ],
+          "paired_ious": [
+            0.9795773554781915,
+            0.9757508116883117,
+            0.9209782714605865
+          ],
+          "union_iou": 0.9706670122688785
+        },
+        {
+          "name": "0003.jpg",
+          "reference_count": 2,
+          "candidate_count": 5,
+          "count_match": false,
+          "ious": [
+            0.9856400226465593,
+            0.9609210063335679,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "paired_ious": [
+            0.9856400226465593,
+            0.9609210063335679
+          ],
+          "union_iou": 0.9655457432461826
+        },
+        {
+          "name": "0004.jpg",
+          "reference_count": 2,
+          "candidate_count": 5,
+          "count_match": false,
+          "ious": [
+            0.9864628371422689,
+            0.9777507915166761,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "paired_ious": [
+            0.9864628371422689,
+            0.9777507915166761
+          ],
+          "union_iou": 0.9577695949500263
+        },
+        {
+          "name": "0005.jpg",
+          "reference_count": 2,
+          "candidate_count": 4,
+          "count_match": false,
+          "ious": [
+            0.984,
+            0.9636254450306696,
+            0.0,
+            0.0
+          ],
+          "paired_ious": [
+            0.984,
+            0.9636254450306696
+          ],
+          "union_iou": 0.967073067836652
+        },
+        {
+          "name": "0006.jpg",
+          "reference_count": 2,
+          "candidate_count": 6,
+          "count_match": false,
+          "ious": [
+            0.9793940452283244,
+            0.969934900362769,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "paired_ious": [
+            0.9793940452283244,
+            0.969934900362769
+          ],
+          "union_iou": 0.9567550505050505
+        },
+        {
+          "name": "0007.jpg",
+          "reference_count": 2,
+          "candidate_count": 2,
+          "count_match": true,
+          "ious": [
+            0.987847868450439,
+            0.9664080100125156
+          ],
+          "paired_ious": [
+            0.987847868450439,
+            0.9664080100125156
+          ],
+          "union_iou": 0.9880071781853197
+        },
+        {
+          "name": "0008.jpg",
+          "reference_count": 3,
+          "candidate_count": 5,
+          "count_match": false,
+          "ious": [
+            0.9850685211699735,
+            0.9819736842105263,
+            0.9648663101604278,
+            0.0,
+            0.0
+          ],
+          "paired_ious": [
+            0.9850685211699735,
+            0.9819736842105263,
+            0.9648663101604278
+          ],
+          "union_iou": 0.9767886283603883
+        },
+        {
+          "name": "0009.jpg",
+          "reference_count": 2,
+          "candidate_count": 4,
+          "count_match": false,
+          "ious": [
+            0.9869639246568054,
+            0.9794931756346548,
+            0.0,
+            0.0
+          ],
+          "paired_ious": [
+            0.9869639246568054,
+            0.9794931756346548
+          ],
+          "union_iou": 0.9900350121195799
+        },
+        {
+          "name": "0010.jpg",
+          "reference_count": 2,
+          "candidate_count": 6,
+          "count_match": false,
+          "ious": [
+            0.9834968777876896,
+            0.9802510108210438,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "paired_ious": [
+            0.9834968777876896,
+            0.9802510108210438
+          ],
+          "union_iou": 0.9626990969732723
+        },
+        {
+          "name": "0011.jpg",
+          "reference_count": 2,
+          "candidate_count": 3,
+          "count_match": false,
+          "ious": [
+            0.984516129032258,
+            0.9673133261055108,
+            0.0
+          ],
+          "paired_ious": [
+            0.984516129032258,
+            0.9673133261055108
+          ],
+          "union_iou": 0.967117723569815
+        },
+        {
+          "name": "0012.jpg",
+          "reference_count": 2,
+          "candidate_count": 3,
+          "count_match": false,
+          "ious": [
+            0.9887831920446947,
+            0.9638914210473007,
+            0.0
+          ],
+          "paired_ious": [
+            0.9887831920446947,
+            0.9638914210473007
+          ],
+          "union_iou": 0.9887688891763133
+        },
+        {
+          "name": "0013.jpg",
+          "reference_count": 2,
+          "candidate_count": 4,
+          "count_match": false,
+          "ious": [
+            0.9848668949519497,
+            0.9635451333777072,
+            0.0,
+            0.0
+          ],
+          "paired_ious": [
+            0.9848668949519497,
+            0.9635451333777072
+          ],
+          "union_iou": 0.9797771538866468
+        },
+        {
+          "name": "0014.jpg",
+          "reference_count": 2,
+          "candidate_count": 7,
+          "count_match": false,
+          "ious": [
+            0.973597802050526,
+            0.9677081149087859,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "paired_ious": [
+            0.973597802050526,
+            0.9677081149087859
+          ],
+          "union_iou": 0.9690115207884747
+        },
+        {
+          "name": "0015.jpg",
+          "reference_count": 2,
+          "candidate_count": 7,
+          "count_match": false,
+          "ious": [
+            0.9864426604285182,
+            0.9821644362887705,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "paired_ious": [
+            0.9864426604285182,
+            0.9821644362887705
+          ],
+          "union_iou": 0.9803523639607493
+        },
+        {
+          "name": "0016.jpg",
+          "reference_count": 2,
+          "candidate_count": 4,
+          "count_match": false,
+          "ious": [
+            0.9876811909633048,
+            0.9676849542809642,
+            0.0,
+            0.0
+          ],
+          "paired_ious": [
+            0.9876811909633048,
+            0.9676849542809642
+          ],
+          "union_iou": 0.9700925454236713
+        },
+        {
+          "name": "0017.jpg",
+          "reference_count": 2,
+          "candidate_count": 8,
+          "count_match": false,
+          "ious": [
+            0.9888068692090334,
+            0.9784863815217947,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "paired_ious": [
+            0.9888068692090334,
+            0.9784863815217947
+          ],
+          "union_iou": 0.8954067515218594
+        },
+        {
+          "name": "0018.jpg",
+          "reference_count": 3,
+          "candidate_count": 5,
+          "count_match": false,
+          "ious": [
+            0.9894983776199245,
+            0.9650367761317725,
+            0.18730955752971976,
+            0.0,
+            0.0
+          ],
+          "paired_ious": [
+            0.9894983776199245,
+            0.9650367761317725,
+            0.18730955752971976
+          ],
+          "union_iou": 0.9659119925100008
+        },
+        {
+          "name": "0019.jpg",
+          "reference_count": 3,
+          "candidate_count": 8,
+          "count_match": false,
+          "ious": [
+            0.992290893208124,
+            0.9750182538854699,
+            0.9177209345276572,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "paired_ious": [
+            0.992290893208124,
+            0.9750182538854699,
+            0.9177209345276572
+          ],
+          "union_iou": 0.9810842763046783
+        },
+        {
+          "name": "0020.jpg",
+          "reference_count": 4,
+          "candidate_count": 7,
+          "count_match": false,
+          "ious": [
+            0.9819342781498209,
+            0.9742215471411522,
+            0.9634894991922456,
+            0.1768615572359389,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "paired_ious": [
+            0.9819342781498209,
+            0.9742215471411522,
+            0.9634894991922456,
+            0.1768615572359389
+          ],
+          "union_iou": 0.9580687774321387
+        },
+        {
+          "name": "0021.jpg",
+          "reference_count": 2,
+          "candidate_count": 3,
+          "count_match": false,
+          "ious": [
+            0.9928303836713603,
+            0.984678085018572,
+            0.0
+          ],
+          "paired_ious": [
+            0.9928303836713603,
+            0.984678085018572
+          ],
+          "union_iou": 0.9927486336446185
+        },
+        {
+          "name": "0022.jpg",
+          "reference_count": 2,
+          "candidate_count": 4,
+          "count_match": false,
+          "ious": [
+            0.9919171618315274,
+            0.9719843153441338,
+            0.0,
+            0.0
+          ],
+          "paired_ious": [
+            0.9919171618315274,
+            0.9719843153441338
+          ],
+          "union_iou": 0.9884610369855275
+        },
+        {
+          "name": "0023.jpg",
+          "reference_count": 2,
+          "candidate_count": 4,
+          "count_match": false,
+          "ious": [
+            0.9875648788927336,
+            0.9849787630788356,
+            0.0,
+            0.0
+          ],
+          "paired_ious": [
+            0.9875648788927336,
+            0.9849787630788356
+          ],
+          "union_iou": 0.9841836076847037
+        },
+        {
+          "name": "0024.jpg",
+          "reference_count": 4,
+          "candidate_count": 5,
+          "count_match": false,
+          "ious": [
+            0.9822619847959869,
+            0.9751247060891731,
+            0.9713305824982584,
+            0.8901108647450111,
+            0.0
+          ],
+          "paired_ious": [
+            0.9822619847959869,
+            0.9751247060891731,
+            0.9713305824982584,
+            0.8901108647450111
+          ],
+          "union_iou": 0.9729746795478942
+        },
+        {
+          "name": "0025.jpg",
+          "reference_count": 2,
+          "candidate_count": 5,
+          "count_match": false,
+          "ious": [
+            0.9793124584972162,
+            0.968031709786519,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "paired_ious": [
+            0.9793124584972162,
+            0.968031709786519
+          ],
+          "union_iou": 0.9712272958750636
+        },
+        {
+          "name": "0026.jpg",
+          "reference_count": 2,
+          "candidate_count": 7,
+          "count_match": false,
+          "ious": [
+            0.9909956264471315,
+            0.9541904158750264,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "paired_ious": [
+            0.9909956264471315,
+            0.9541904158750264
+          ],
+          "union_iou": 0.96658044058745
+        },
+        {
+          "name": "0027.jpg",
+          "reference_count": 3,
+          "candidate_count": 5,
+          "count_match": false,
+          "ious": [
+            0.9903491931717947,
+            0.9803104309128405,
+            0.9458035793000088,
+            0.0,
+            0.0
+          ],
+          "paired_ious": [
+            0.9903491931717947,
+            0.9803104309128405,
+            0.9458035793000088
+          ],
+          "union_iou": 0.980381635149928
+        },
+        {
+          "name": "0028.jpg",
+          "reference_count": 2,
+          "candidate_count": 4,
+          "count_match": false,
+          "ious": [
+            0.9850340432011485,
+            0.9798071127185051,
+            0.0,
+            0.0
+          ],
+          "paired_ious": [
+            0.9850340432011485,
+            0.9798071127185051
+          ],
+          "union_iou": 0.9883887179931545
+        },
+        {
+          "name": "0029.jpg",
+          "reference_count": 2,
+          "candidate_count": 3,
+          "count_match": false,
+          "ious": [
+            0.9838131825441361,
+            0.9809717443436555,
+            0.0
+          ],
+          "paired_ious": [
+            0.9838131825441361,
+            0.9809717443436555
+          ],
+          "union_iou": 0.9870051635111876
+        },
+        {
+          "name": "0030.jpg",
+          "reference_count": 3,
+          "candidate_count": 10,
+          "count_match": false,
+          "ious": [
+            0.9815005668349995,
+            0.969192519727597,
+            0.9494285971384865,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "paired_ious": [
+            0.9815005668349995,
+            0.969192519727597,
+            0.9494285971384865
+          ],
+          "union_iou": 0.9806671721000758
+        },
+        {
+          "name": "0031.jpg",
+          "reference_count": 2,
+          "candidate_count": 6,
+          "count_match": false,
+          "ious": [
+            0.9892570541030288,
+            0.9785652461687286,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "paired_ious": [
+            0.9892570541030288,
+            0.9785652461687286
+          ],
+          "union_iou": 0.9697910547956701
+        },
+        {
+          "name": "0032.jpg",
+          "reference_count": 3,
+          "candidate_count": 6,
+          "count_match": false,
+          "ious": [
+            0.9844906516065546,
+            0.9665740974501389,
+            0.9178508564804877,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "paired_ious": [
+            0.9844906516065546,
+            0.9665740974501389,
+            0.9178508564804877
+          ],
+          "union_iou": 0.9699035343207122
+        },
+        {
+          "name": "0033.jpg",
+          "reference_count": 3,
+          "candidate_count": 6,
+          "count_match": false,
+          "ious": [
+            0.9926547519911174,
+            0.9802814060214837,
+            0.8621838149248358,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "paired_ious": [
+            0.9926547519911174,
+            0.9802814060214837,
+            0.8621838149248358
+          ],
+          "union_iou": 0.9911142779302974
+        },
+        {
+          "name": "0034.jpg",
+          "reference_count": 2,
+          "candidate_count": 7,
+          "count_match": false,
+          "ious": [
+            0.9866288318500366,
+            0.9746378627637713,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "paired_ious": [
+            0.9866288318500366,
+            0.9746378627637713
+          ],
+          "union_iou": 0.9844289183317002
+        },
+        {
+          "name": "0035.jpg",
+          "reference_count": 2,
+          "candidate_count": 6,
+          "count_match": false,
+          "ious": [
+            0.9906501507690305,
+            0.9756682309732707,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "paired_ious": [
+            0.9906501507690305,
+            0.9756682309732707
+          ],
+          "union_iou": 0.9716228199822643
+        },
+        {
+          "name": "0036.jpg",
+          "reference_count": 2,
+          "candidate_count": 5,
+          "count_match": false,
+          "ious": [
+            0.9717574827321566,
+            0.9698789202064311,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "paired_ious": [
+            0.9717574827321566,
+            0.9698789202064311
+          ],
+          "union_iou": 0.965371404036067
+        },
+        {
+          "name": "0037.jpg",
+          "reference_count": 3,
+          "candidate_count": 2,
+          "count_match": false,
+          "ious": [
+            0.9829628818570021,
+            0.9819529162675807,
+            0.0
+          ],
+          "paired_ious": [
+            0.9829628818570021,
+            0.9819529162675807
+          ],
+          "union_iou": 0.9830664216329745
+        },
+        {
+          "name": "0038.jpg",
+          "reference_count": 2,
+          "candidate_count": 5,
+          "count_match": false,
+          "ious": [
+            0.9781981582159104,
+            0.9699649591189722,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "paired_ious": [
+            0.9781981582159104,
+            0.9699649591189722
+          ],
+          "union_iou": 0.9882216048063451
+        },
+        {
+          "name": "0039.jpg",
+          "reference_count": 3,
+          "candidate_count": 6,
+          "count_match": false,
+          "ious": [
+            0.9798944094886816,
+            0.9750014236091339,
+            0.9520871143375681,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "paired_ious": [
+            0.9798944094886816,
+            0.9750014236091339,
+            0.9520871143375681
+          ],
+          "union_iou": 0.9617492711370262
+        },
+        {
+          "name": "0040.jpg",
+          "reference_count": 3,
+          "candidate_count": 7,
+          "count_match": false,
+          "ious": [
+            0.9717907908457275,
+            0.9615329375718116,
+            0.9451549717709413,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "paired_ious": [
+            0.9717907908457275,
+            0.9615329375718116,
+            0.9451549717709413
+          ],
+          "union_iou": 0.9222227004691602
+        }
+      ]
+    },
+    "qat1_float": {
+      "count_agreement": 0.575,
+      "median_mask_iou": 0.9889251151477514,
+      "median_paired_mask_iou": 0.9913583393183977,
+      "median_union_mask_iou": 0.9956557849599195,
+      "mask_pairs": 107,
+      "per_frame": [
+        {
+          "name": "0001.jpg",
+          "reference_count": 3,
+          "candidate_count": 2,
+          "count_match": false,
+          "ious": [
+            0.993847874720358,
+            0.9931645956629032,
+            0.0
+          ],
+          "paired_ious": [
+            0.993847874720358,
+            0.9931645956629032
+          ],
+          "union_iou": 0.9826749228678073
+        },
+        {
+          "name": "0002.jpg",
+          "reference_count": 3,
+          "candidate_count": 3,
+          "count_match": true,
+          "ious": [
+            0.9957842419401363,
+            0.9754269691562579,
+            0.8709661670653713
+          ],
+          "paired_ious": [
+            0.9957842419401363,
+            0.9754269691562579,
+            0.8709661670653713
+          ],
+          "union_iou": 0.995679340600904
+        },
+        {
+          "name": "0003.jpg",
+          "reference_count": 2,
+          "candidate_count": 2,
+          "count_match": true,
+          "ious": [
+            0.9965947284627631,
+            0.9911449752883031
+          ],
+          "paired_ious": [
+            0.9965947284627631,
+            0.9911449752883031
+          ],
+          "union_iou": 0.99679678352884
+        },
+        {
+          "name": "0004.jpg",
+          "reference_count": 2,
+          "candidate_count": 3,
+          "count_match": false,
+          "ious": [
+            0.9962103062246809,
+            0.9878598504251613,
+            0.0
+          ],
+          "paired_ious": [
+            0.9962103062246809,
+            0.9878598504251613
+          ],
+          "union_iou": 0.9882855478609799
+        },
+        {
+          "name": "0005.jpg",
+          "reference_count": 2,
+          "candidate_count": 2,
+          "count_match": true,
+          "ious": [
+            0.9968782294178437,
+            0.9854737371198794
+          ],
+          "paired_ious": [
+            0.9968782294178437,
+            0.9854737371198794
+          ],
+          "union_iou": 0.996901226597805
+        },
+        {
+          "name": "0006.jpg",
+          "reference_count": 2,
+          "candidate_count": 4,
+          "count_match": false,
+          "ious": [
+            0.992933941072558,
+            0.983659321614261,
+            0.0,
+            0.0
+          ],
+          "paired_ious": [
+            0.992933941072558,
+            0.983659321614261
+          ],
+          "union_iou": 0.9929591280653951
+        },
+        {
+          "name": "0007.jpg",
+          "reference_count": 2,
+          "candidate_count": 3,
+          "count_match": false,
+          "ious": [
+            0.9965576969457782,
+            0.9903266018449265,
+            0.0
+          ],
+          "paired_ious": [
+            0.9965576969457782,
+            0.9903266018449265
+          ],
+          "union_iou": 0.9966254711192918
+        },
+        {
+          "name": "0008.jpg",
+          "reference_count": 3,
+          "candidate_count": 2,
+          "count_match": false,
+          "ious": [
+            0.996484057397763,
+            0.9942980428417322,
+            0.0
+          ],
+          "paired_ious": [
+            0.996484057397763,
+            0.9942980428417322
+          ],
+          "union_iou": 0.997057854868811
+        },
+        {
+          "name": "0009.jpg",
+          "reference_count": 2,
+          "candidate_count": 3,
+          "count_match": false,
+          "ious": [
+            0.9934562357560304,
+            0.9900779964981165,
+            0.0
+          ],
+          "paired_ious": [
+            0.9934562357560304,
+            0.9900779964981165
+          ],
+          "union_iou": 0.9937774771728103
+        },
+        {
+          "name": "0010.jpg",
+          "reference_count": 2,
+          "candidate_count": 2,
+          "count_match": true,
+          "ious": [
+            0.9893925859758821,
+            0.9854119532428356
+          ],
+          "paired_ious": [
+            0.9893925859758821,
+            0.9854119532428356
+          ],
+          "union_iou": 0.9854956439839887
+        },
+        {
+          "name": "0011.jpg",
+          "reference_count": 2,
+          "candidate_count": 2,
+          "count_match": true,
+          "ious": [
+            0.9923598407403422,
+            0.9913583393183977
+          ],
+          "paired_ious": [
+            0.9923598407403422,
+            0.9913583393183977
+          ],
+          "union_iou": 0.9915362023911385
+        },
+        {
+          "name": "0012.jpg",
+          "reference_count": 2,
+          "candidate_count": 3,
+          "count_match": false,
+          "ious": [
+            0.9976681924173072,
+            0.977182032129336,
+            0.0
+          ],
+          "paired_ious": [
+            0.9976681924173072,
+            0.977182032129336
+          ],
+          "union_iou": 0.997539763040335
+        },
+        {
+          "name": "0013.jpg",
+          "reference_count": 2,
+          "candidate_count": 3,
+          "count_match": false,
+          "ious": [
+            0.9947441953296521,
+            0.9802556964635529,
+            0.0
+          ],
+          "paired_ious": [
+            0.9947441953296521,
+            0.9802556964635529
+          ],
+          "union_iou": 0.9947518767023185
+        },
+        {
+          "name": "0014.jpg",
+          "reference_count": 2,
+          "candidate_count": 3,
+          "count_match": false,
+          "ious": [
+            0.9959180011662854,
+            0.9847804259366908,
+            0.0
+          ],
+          "paired_ious": [
+            0.9959180011662854,
+            0.9847804259366908
+          ],
+          "union_iou": 0.9959898738714519
+        },
+        {
+          "name": "0015.jpg",
+          "reference_count": 2,
+          "candidate_count": 2,
+          "count_match": true,
+          "ious": [
+            0.9957972805933251,
+            0.9940743113388854
+          ],
+          "paired_ious": [
+            0.9957972805933251,
+            0.9940743113388854
+          ],
+          "union_iou": 0.9957130672891323
+        },
+        {
+          "name": "0016.jpg",
+          "reference_count": 2,
+          "candidate_count": 2,
+          "count_match": true,
+          "ious": [
+            0.9974457494651355,
+            0.9589138978206503
+          ],
+          "paired_ious": [
+            0.9974457494651355,
+            0.9589138978206503
+          ],
+          "union_iou": 0.9969470309876355
+        },
+        {
+          "name": "0017.jpg",
+          "reference_count": 2,
+          "candidate_count": 2,
+          "count_match": true,
+          "ious": [
+            0.9958269273006809,
+            0.9864446362390211
+          ],
+          "paired_ious": [
+            0.9958269273006809,
+            0.9864446362390211
+          ],
+          "union_iou": 0.995632229318935
+        },
+        {
+          "name": "0018.jpg",
+          "reference_count": 3,
+          "candidate_count": 2,
+          "count_match": false,
+          "ious": [
+            0.9974496526250989,
+            0.989688009680644,
+            0.0
+          ],
+          "paired_ious": [
+            0.9974496526250989,
+            0.989688009680644
+          ],
+          "union_iou": 0.9754447022428461
+        },
+        {
+          "name": "0019.jpg",
+          "reference_count": 3,
+          "candidate_count": 3,
+          "count_match": true,
+          "ious": [
+            0.9971618818906233,
+            0.9666666666666667,
+            0.949449125081011
+          ],
+          "paired_ious": [
+            0.9971618818906233,
+            0.9666666666666667,
+            0.949449125081011
+          ],
+          "union_iou": 0.9970043223349168
+        },
+        {
+          "name": "0020.jpg",
+          "reference_count": 4,
+          "candidate_count": 3,
+          "count_match": false,
+          "ious": [
+            0.9962193638101859,
+            0.988061021445943,
+            0.9773941635840526,
+            0.0
+          ],
+          "paired_ious": [
+            0.9962193638101859,
+            0.988061021445943,
+            0.9773941635840526
+          ],
+          "union_iou": 0.981928999144568
+        },
+        {
+          "name": "0021.jpg",
+          "reference_count": 2,
+          "candidate_count": 2,
+          "count_match": true,
+          "ious": [
+            0.9962500808172238,
+            0.980167227490568
+          ],
+          "paired_ious": [
+            0.9962500808172238,
+            0.980167227490568
+          ],
+          "union_iou": 0.9962953390195571
+        },
+        {
+          "name": "0022.jpg",
+          "reference_count": 2,
+          "candidate_count": 2,
+          "count_match": true,
+          "ious": [
+            0.9963011599912454,
+            0.9864043670820888
+          ],
+          "paired_ious": [
+            0.9963011599912454,
+            0.9864043670820888
+          ],
+          "union_iou": 0.9963931272679578
+        },
+        {
+          "name": "0023.jpg",
+          "reference_count": 2,
+          "candidate_count": 2,
+          "count_match": true,
+          "ious": [
+            0.9976184805906169,
+            0.9889251151477514
+          ],
+          "paired_ious": [
+            0.9976184805906169,
+            0.9889251151477514
+          ],
+          "union_iou": 0.9975130295625094
+        },
+        {
+          "name": "0024.jpg",
+          "reference_count": 4,
+          "candidate_count": 3,
+          "count_match": false,
+          "ious": [
+            0.9935552454986379,
+            0.9874338624338624,
+            0.9843452288995314,
+            0.0
+          ],
+          "paired_ious": [
+            0.9935552454986379,
+            0.9874338624338624,
+            0.9843452288995314
+          ],
+          "union_iou": 0.9686266899540721
+        },
+        {
+          "name": "0025.jpg",
+          "reference_count": 2,
+          "candidate_count": 2,
+          "count_match": true,
+          "ious": [
+            0.9918349713791986,
+            0.982343581583945
+          ],
+          "paired_ious": [
+            0.9918349713791986,
+            0.982343581583945
+          ],
+          "union_iou": 0.99168861448124
+        },
+        {
+          "name": "0026.jpg",
+          "reference_count": 2,
+          "candidate_count": 3,
+          "count_match": false,
+          "ious": [
+            0.9958150914241566,
+            0.9928398495853294,
+            0.0
+          ],
+          "paired_ious": [
+            0.9958150914241566,
+            0.9928398495853294
+          ],
+          "union_iou": 0.9956246648793565
+        },
+        {
+          "name": "0027.jpg",
+          "reference_count": 3,
+          "candidate_count": 3,
+          "count_match": true,
+          "ious": [
+            0.9964795619010366,
+            0.9938204289349327,
+            0.9817892503536068
+          ],
+          "paired_ious": [
+            0.9964795619010366,
+            0.9938204289349327,
+            0.9817892503536068
+          ],
+          "union_iou": 0.9967011642949547
+        },
+        {
+          "name": "0028.jpg",
+          "reference_count": 2,
+          "candidate_count": 2,
+          "count_match": true,
+          "ious": [
+            0.9971880721946116,
+            0.9589331716926807
+          ],
+          "paired_ious": [
+            0.9971880721946116,
+            0.9589331716926807
+          ],
+          "union_iou": 0.997018238802072
+        },
+        {
+          "name": "0029.jpg",
+          "reference_count": 2,
+          "candidate_count": 2,
+          "count_match": true,
+          "ious": [
+            0.9969286007829905,
+            0.9839995830510241
+          ],
+          "paired_ious": [
+            0.9969286007829905,
+            0.9839995830510241
+          ],
+          "union_iou": 0.9971476111243166
+        },
+        {
+          "name": "0030.jpg",
+          "reference_count": 3,
+          "candidate_count": 3,
+          "count_match": true,
+          "ious": [
+            0.9864847246968841,
+            0.979253112033195,
+            0.9588326777056079
+          ],
+          "paired_ious": [
+            0.9864847246968841,
+            0.979253112033195,
+            0.9588326777056079
+          ],
+          "union_iou": 0.9863110539845759
+        },
+        {
+          "name": "0031.jpg",
+          "reference_count": 2,
+          "candidate_count": 3,
+          "count_match": false,
+          "ious": [
+            0.9968013831856495,
+            0.9903278354713908,
+            0.0
+          ],
+          "paired_ious": [
+            0.9968013831856495,
+            0.9903278354713908
+          ],
+          "union_iou": 0.9965884308941334
+        },
+        {
+          "name": "0032.jpg",
+          "reference_count": 3,
+          "candidate_count": 2,
+          "count_match": false,
+          "ious": [
+            0.996828797943004,
+            0.9886203423967774,
+            0.0
+          ],
+          "paired_ious": [
+            0.996828797943004,
+            0.9886203423967774
+          ],
+          "union_iou": 0.976517166977397
+        },
+        {
+          "name": "0033.jpg",
+          "reference_count": 3,
+          "candidate_count": 2,
+          "count_match": false,
+          "ious": [
+            0.9975097677214375,
+            0.9856278366111951,
+            0.0
+          ],
+          "paired_ious": [
+            0.9975097677214375,
+            0.9856278366111951
+          ],
+          "union_iou": 0.9790451319419582
+        },
+        {
+          "name": "0034.jpg",
+          "reference_count": 2,
+          "candidate_count": 3,
+          "count_match": false,
+          "ious": [
+            0.9972067039106145,
+            0.9878965980973253,
+            0.0
+          ],
+          "paired_ious": [
+            0.9972067039106145,
+            0.9878965980973253
+          ],
+          "union_iou": 0.9972954989375175
+        },
+        {
+          "name": "0035.jpg",
+          "reference_count": 2,
+          "candidate_count": 2,
+          "count_match": true,
+          "ious": [
+            0.9981960051294312,
+            0.9934227298220568
+          ],
+          "paired_ious": [
+            0.9981960051294312,
+            0.9934227298220568
+          ],
+          "union_iou": 0.9981760145918832
+        },
+        {
+          "name": "0036.jpg",
+          "reference_count": 2,
+          "candidate_count": 2,
+          "count_match": true,
+          "ious": [
+            0.9962710443282363,
+            0.9865051903114187
+          ],
+          "paired_ious": [
+            0.9962710443282363,
+            0.9865051903114187
+          ],
+          "union_iou": 0.9962963779458125
+        },
+        {
+          "name": "0037.jpg",
+          "reference_count": 3,
+          "candidate_count": 3,
+          "count_match": true,
+          "ious": [
+            0.9931181098910733,
+            0.9898235412071386,
+            0.9725271866382226
+          ],
+          "paired_ious": [
+            0.9931181098910733,
+            0.9898235412071386,
+            0.9725271866382226
+          ],
+          "union_iou": 0.9930823117338003
+        },
+        {
+          "name": "0038.jpg",
+          "reference_count": 2,
+          "candidate_count": 2,
+          "count_match": true,
+          "ious": [
+            0.9941441119760052,
+            0.9925427124492181
+          ],
+          "paired_ious": [
+            0.9941441119760052,
+            0.9925427124492181
+          ],
+          "union_iou": 0.9942225392296719
+        },
+        {
+          "name": "0039.jpg",
+          "reference_count": 3,
+          "candidate_count": 3,
+          "count_match": true,
+          "ious": [
+            0.9914210934470725,
+            0.9804958489707722,
+            0.8496367629667173
+          ],
+          "paired_ious": [
+            0.9914210934470725,
+            0.9804958489707722,
+            0.8496367629667173
+          ],
+          "union_iou": 0.8725812571139496
+        },
+        {
+          "name": "0040.jpg",
+          "reference_count": 3,
+          "candidate_count": 3,
+          "count_match": true,
+          "ious": [
+            0.9908358655283847,
+            0.9811847071049609,
+            0.12453695128727542
+          ],
+          "paired_ious": [
+            0.9908358655283847,
+            0.9811847071049609,
+            0.12453695128727542
+          ],
+          "union_iou": 0.9524829555924084
+        }
+      ]
+    },
+    "qat1_int8": {
+      "count_agreement": 0.125,
+      "median_mask_iou": 0.9602518409069261,
+      "median_paired_mask_iou": 0.9751506661187213,
+      "median_union_mask_iou": 0.9775354123422115,
+      "mask_pairs": 154,
+      "per_frame": [
+        {
+          "name": "0001.jpg",
+          "reference_count": 3,
+          "candidate_count": 4,
+          "count_match": false,
+          "ious": [
+            0.9870301612328977,
+            0.9620120969496541,
+            0.9320289478245797,
+            0.0
+          ],
+          "paired_ious": [
+            0.9870301612328977,
+            0.9620120969496541,
+            0.9320289478245797
+          ],
+          "union_iou": 0.971181804475651
+        },
+        {
+          "name": "0002.jpg",
+          "reference_count": 3,
+          "candidate_count": 2,
+          "count_match": false,
+          "ious": [
+            0.9579434058728077,
+            0.9521062037273423,
+            0.0
+          ],
+          "paired_ious": [
+            0.9579434058728077,
+            0.9521062037273423
+          ],
+          "union_iou": 0.9586820896516507
+        },
+        {
+          "name": "0003.jpg",
+          "reference_count": 2,
+          "candidate_count": 4,
+          "count_match": false,
+          "ious": [
+            0.9820699633131814,
+            0.9746323122857459,
+            0.0,
+            0.0
+          ],
+          "paired_ious": [
+            0.9820699633131814,
+            0.9746323122857459
+          ],
+          "union_iou": 0.9807822794230306
+        },
+        {
+          "name": "0004.jpg",
+          "reference_count": 2,
+          "candidate_count": 2,
+          "count_match": true,
+          "ious": [
+            0.9854236415142931,
+            0.9572297429860702
+          ],
+          "paired_ious": [
+            0.9854236415142931,
+            0.9572297429860702
+          ],
+          "union_iou": 0.9573666209180228
+        },
+        {
+          "name": "0005.jpg",
+          "reference_count": 2,
+          "candidate_count": 4,
+          "count_match": false,
+          "ious": [
+            0.9845514866028465,
+            0.9577735124760077,
+            0.0,
+            0.0
+          ],
+          "paired_ious": [
+            0.9845514866028465,
+            0.9577735124760077
+          ],
+          "union_iou": 0.9602262986456369
+        },
+        {
+          "name": "0006.jpg",
+          "reference_count": 2,
+          "candidate_count": 3,
+          "count_match": false,
+          "ious": [
+            0.9779701885138097,
+            0.9646379121426437,
+            0.0
+          ],
+          "paired_ious": [
+            0.9779701885138097,
+            0.9646379121426437
+          ],
+          "union_iou": 0.9794001817631021
+        },
+        {
+          "name": "0007.jpg",
+          "reference_count": 2,
+          "candidate_count": 4,
+          "count_match": false,
+          "ious": [
+            0.9800175284837862,
+            0.9671039455237332,
+            0.0,
+            0.0
+          ],
+          "paired_ious": [
+            0.9800175284837862,
+            0.9671039455237332
+          ],
+          "union_iou": 0.9777370750746822
+        },
+        {
+          "name": "0008.jpg",
+          "reference_count": 3,
+          "candidate_count": 3,
+          "count_match": true,
+          "ious": [
+            0.9834642838802444,
+            0.9751295109316007,
+            0.9648062755074999
+          ],
+          "paired_ious": [
+            0.9834642838802444,
+            0.9751295109316007,
+            0.9648062755074999
+          ],
+          "union_iou": 0.9753305703572134
+        },
+        {
+          "name": "0009.jpg",
+          "reference_count": 2,
+          "candidate_count": 3,
+          "count_match": false,
+          "ious": [
+            0.9868721764549562,
+            0.967322027790915,
+            0.0
+          ],
+          "paired_ious": [
+            0.9868721764549562,
+            0.967322027790915
+          ],
+          "union_iou": 0.9672345117807233
+        },
+        {
+          "name": "0010.jpg",
+          "reference_count": 2,
+          "candidate_count": 3,
+          "count_match": false,
+          "ious": [
+            0.98046875,
+            0.9798174180375959,
+            0.0
+          ],
+          "paired_ious": [
+            0.98046875,
+            0.9798174180375959
+          ],
+          "union_iou": 0.9798129000492368
+        },
+        {
+          "name": "0011.jpg",
+          "reference_count": 2,
+          "candidate_count": 4,
+          "count_match": false,
+          "ious": [
+            0.9858414673388395,
+            0.9748780543659972,
+            0.0,
+            0.0
+          ],
+          "paired_ious": [
+            0.9858414673388395,
+            0.9748780543659972
+          ],
+          "union_iou": 0.9764106779931949
+        },
+        {
+          "name": "0012.jpg",
+          "reference_count": 2,
+          "candidate_count": 3,
+          "count_match": false,
+          "ious": [
+            0.9864278778724781,
+            0.9841977099632143,
+            0.0
+          ],
+          "paired_ious": [
+            0.9864278778724781,
+            0.9841977099632143
+          ],
+          "union_iou": 0.9867246164769671
+        },
+        {
+          "name": "0013.jpg",
+          "reference_count": 2,
+          "candidate_count": 4,
+          "count_match": false,
+          "ious": [
+            0.9761622207316444,
+            0.9720463320463321,
+            0.0,
+            0.0
+          ],
+          "paired_ious": [
+            0.9761622207316444,
+            0.9720463320463321
+          ],
+          "union_iou": 0.9599138858988159
+        },
+        {
+          "name": "0014.jpg",
+          "reference_count": 2,
+          "candidate_count": 7,
+          "count_match": false,
+          "ious": [
+            0.9830557663972853,
+            0.9751209398756047,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "paired_ious": [
+            0.9830557663972853,
+            0.9751209398756047
+          ],
+          "union_iou": 0.9810356600074889
+        },
+        {
+          "name": "0015.jpg",
+          "reference_count": 2,
+          "candidate_count": 5,
+          "count_match": false,
+          "ious": [
+            0.9909852243025551,
+            0.9691273356868212,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "paired_ious": [
+            0.9909852243025551,
+            0.9691273356868212
+          ],
+          "union_iou": 0.9536694653499804
+        },
+        {
+          "name": "0016.jpg",
+          "reference_count": 2,
+          "candidate_count": 5,
+          "count_match": false,
+          "ious": [
+            0.9839890210430009,
+            0.9811420143278551,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "paired_ious": [
+            0.9839890210430009,
+            0.9811420143278551
+          ],
+          "union_iou": 0.9877826878086821
+        },
+        {
+          "name": "0017.jpg",
+          "reference_count": 2,
+          "candidate_count": 3,
+          "count_match": false,
+          "ious": [
+            0.9698053586710846,
+            0.9660634643973958,
+            0.0
+          ],
+          "paired_ious": [
+            0.9698053586710846,
+            0.9660634643973958
+          ],
+          "union_iou": 0.9699368476449435
+        },
+        {
+          "name": "0018.jpg",
+          "reference_count": 3,
+          "candidate_count": 3,
+          "count_match": true,
+          "ious": [
+            0.9838131393019087,
+            0.9787793180474345,
+            0.9367600346520358
+          ],
+          "paired_ious": [
+            0.9838131393019087,
+            0.9787793180474345,
+            0.9367600346520358
+          ],
+          "union_iou": 0.9828210345935525
+        },
+        {
+          "name": "0019.jpg",
+          "reference_count": 3,
+          "candidate_count": 7,
+          "count_match": false,
+          "ious": [
+            0.9806966009232061,
+            0.9758175502981847,
+            0.9504816782209418,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "paired_ious": [
+            0.9806966009232061,
+            0.9758175502981847,
+            0.9504816782209418
+          ],
+          "union_iou": 0.9913536076326774
+        },
+        {
+          "name": "0020.jpg",
+          "reference_count": 4,
+          "candidate_count": 5,
+          "count_match": false,
+          "ious": [
+            0.9812525965932696,
+            0.972309907515091,
+            0.9614725470204135,
+            0.9520635231840016,
+            0.0
+          ],
+          "paired_ious": [
+            0.9812525965932696,
+            0.972309907515091,
+            0.9614725470204135,
+            0.9520635231840016
+          ],
+          "union_iou": 0.9785638410877416
+        },
+        {
+          "name": "0021.jpg",
+          "reference_count": 2,
+          "candidate_count": 3,
+          "count_match": false,
+          "ious": [
+            0.9825708998579851,
+            0.9805064205043577,
+            0.0
+          ],
+          "paired_ious": [
+            0.9825708998579851,
+            0.9805064205043577
+          ],
+          "union_iou": 0.9825131205368666
+        },
+        {
+          "name": "0022.jpg",
+          "reference_count": 2,
+          "candidate_count": 5,
+          "count_match": false,
+          "ious": [
+            0.9793596016075485,
+            0.963786564139866,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "paired_ious": [
+            0.9793596016075485,
+            0.963786564139866
+          ],
+          "union_iou": 0.9695218866789811
+        },
+        {
+          "name": "0023.jpg",
+          "reference_count": 2,
+          "candidate_count": 3,
+          "count_match": false,
+          "ious": [
+            0.9891276075534516,
+            0.9780387931034483,
+            0.0
+          ],
+          "paired_ious": [
+            0.9891276075534516,
+            0.9780387931034483
+          ],
+          "union_iou": 0.9781883168615292
+        },
+        {
+          "name": "0024.jpg",
+          "reference_count": 4,
+          "candidate_count": 5,
+          "count_match": false,
+          "ious": [
+            0.979931371529583,
+            0.9676173237384663,
+            0.9598214285714286,
+            0.4258718877959241,
+            0.0
+          ],
+          "paired_ious": [
+            0.979931371529583,
+            0.9676173237384663,
+            0.9598214285714286,
+            0.4258718877959241
+          ],
+          "union_iou": 0.9633866321546362
+        },
+        {
+          "name": "0025.jpg",
+          "reference_count": 2,
+          "candidate_count": 5,
+          "count_match": false,
+          "ious": [
+            0.9738788599803445,
+            0.9717152103559871,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "paired_ious": [
+            0.9738788599803445,
+            0.9717152103559871
+          ],
+          "union_iou": 0.9674655723140059
+        },
+        {
+          "name": "0026.jpg",
+          "reference_count": 2,
+          "candidate_count": 3,
+          "count_match": false,
+          "ious": [
+            0.9874029513085506,
+            0.9606822532424236,
+            0.0
+          ],
+          "paired_ious": [
+            0.9874029513085506,
+            0.9606822532424236
+          ],
+          "union_iou": 0.9729905561385099
+        },
+        {
+          "name": "0027.jpg",
+          "reference_count": 3,
+          "candidate_count": 3,
+          "count_match": true,
+          "ious": [
+            0.9859417959226021,
+            0.9648417989532889,
+            0.9184888431324276
+          ],
+          "paired_ious": [
+            0.9859417959226021,
+            0.9648417989532889,
+            0.9184888431324276
+          ],
+          "union_iou": 0.9729747189801455
+        },
+        {
+          "name": "0028.jpg",
+          "reference_count": 2,
+          "candidate_count": 3,
+          "count_match": false,
+          "ious": [
+            0.9855993038938438,
+            0.9503152585119798,
+            0.0
+          ],
+          "paired_ious": [
+            0.9855993038938438,
+            0.9503152585119798
+          ],
+          "union_iou": 0.98565965583174
+        },
+        {
+          "name": "0029.jpg",
+          "reference_count": 2,
+          "candidate_count": 3,
+          "count_match": false,
+          "ious": [
+            0.9799500052077909,
+            0.9737188761958235,
+            0.0
+          ],
+          "paired_ious": [
+            0.9799500052077909,
+            0.9737188761958235
+          ],
+          "union_iou": 0.9711317142426915
+        },
+        {
+          "name": "0030.jpg",
+          "reference_count": 3,
+          "candidate_count": 6,
+          "count_match": false,
+          "ious": [
+            0.9806850373422611,
+            0.9762799740764744,
+            0.9491788321167883,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "paired_ious": [
+            0.9806850373422611,
+            0.9762799740764744,
+            0.9491788321167883
+          ],
+          "union_iou": 0.9865151836908048
+        },
+        {
+          "name": "0031.jpg",
+          "reference_count": 2,
+          "candidate_count": 3,
+          "count_match": false,
+          "ious": [
+            0.979079317981466,
+            0.9762452107279693,
+            0.0
+          ],
+          "paired_ious": [
+            0.979079317981466,
+            0.9762452107279693
+          ],
+          "union_iou": 0.9796001719690456
+        },
+        {
+          "name": "0032.jpg",
+          "reference_count": 3,
+          "candidate_count": 3,
+          "count_match": true,
+          "ious": [
+            0.9798504273504274,
+            0.968838814453918,
+            0.9616936775350714
+          ],
+          "paired_ious": [
+            0.9798504273504274,
+            0.968838814453918,
+            0.9616936775350714
+          ],
+          "union_iou": 0.9773337496097408
+        },
+        {
+          "name": "0033.jpg",
+          "reference_count": 3,
+          "candidate_count": 4,
+          "count_match": false,
+          "ious": [
+            0.9844242099625067,
+            0.9726983163961778,
+            0.20543073155148547,
+            0.0
+          ],
+          "paired_ious": [
+            0.9844242099625067,
+            0.9726983163961778,
+            0.20543073155148547
+          ],
+          "union_iou": 0.971890756302521
+        },
+        {
+          "name": "0034.jpg",
+          "reference_count": 2,
+          "candidate_count": 5,
+          "count_match": false,
+          "ious": [
+            0.9751718213058419,
+            0.9659884451142929,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "paired_ious": [
+            0.9751718213058419,
+            0.9659884451142929
+          ],
+          "union_iou": 0.9715650931120544
+        },
+        {
+          "name": "0035.jpg",
+          "reference_count": 2,
+          "candidate_count": 3,
+          "count_match": false,
+          "ious": [
+            0.9857000260394063,
+            0.9749705686645851,
+            0.0
+          ],
+          "paired_ious": [
+            0.9857000260394063,
+            0.9749705686645851
+          ],
+          "union_iou": 0.9844580865505166
+        },
+        {
+          "name": "0036.jpg",
+          "reference_count": 2,
+          "candidate_count": 3,
+          "count_match": false,
+          "ious": [
+            0.9853414137878225,
+            0.9710008427105538,
+            0.0
+          ],
+          "paired_ious": [
+            0.9853414137878225,
+            0.9710008427105538
+          ],
+          "union_iou": 0.9830069061676217
+        },
+        {
+          "name": "0037.jpg",
+          "reference_count": 3,
+          "candidate_count": 2,
+          "count_match": false,
+          "ious": [
+            0.9874641755452974,
+            0.9768256669502978,
+            0.0
+          ],
+          "paired_ious": [
+            0.9874641755452974,
+            0.9768256669502978
+          ],
+          "union_iou": 0.9875204895639821
+        },
+        {
+          "name": "0038.jpg",
+          "reference_count": 2,
+          "candidate_count": 4,
+          "count_match": false,
+          "ious": [
+            0.9899983330555092,
+            0.9800194815993918,
+            0.0,
+            0.0
+          ],
+          "paired_ious": [
+            0.9899983330555092,
+            0.9800194815993918
+          ],
+          "union_iou": 0.9802744018230156
+        },
+        {
+          "name": "0039.jpg",
+          "reference_count": 3,
+          "candidate_count": 4,
+          "count_match": false,
+          "ious": [
+            0.9785119591895663,
+            0.9745961066392647,
+            0.932044116919729,
+            0.0
+          ],
+          "paired_ious": [
+            0.9785119591895663,
+            0.9745961066392647,
+            0.932044116919729
+          ],
+          "union_iou": 0.9777968977796898
+        },
+        {
+          "name": "0040.jpg",
+          "reference_count": 3,
+          "candidate_count": 4,
+          "count_match": false,
+          "ious": [
+            0.974165887978893,
+            0.9546860869151316,
+            0.1323186127387928,
+            0.0
+          ],
+          "paired_ious": [
+            0.974165887978893,
+            0.9546860869151316,
+            0.1323186127387928
+          ],
+          "union_iou": 0.9196843929581319
+        }
+      ]
+    },
+    "qat2_float": {
+      "count_agreement": 0.6,
+      "median_mask_iou": 0.984349620555427,
+      "median_paired_mask_iou": 0.989464199071186,
+      "median_union_mask_iou": 0.9947412288713886,
+      "mask_pairs": 104,
+      "per_frame": [
+        {
+          "name": "0001.jpg",
+          "reference_count": 3,
+          "candidate_count": 2,
+          "count_match": false,
+          "ious": [
+            0.9960993680540423,
+            0.990334008097166,
+            0.0
+          ],
+          "paired_ious": [
+            0.9960993680540423,
+            0.990334008097166
+          ],
+          "union_iou": 0.9887873037778161
+        },
+        {
+          "name": "0002.jpg",
+          "reference_count": 3,
+          "candidate_count": 2,
+          "count_match": false,
+          "ious": [
+            0.9936249335930583,
+            0.9837642508143323,
+            0.0
+          ],
+          "paired_ious": [
+            0.9936249335930583,
+            0.9837642508143323
+          ],
+          "union_iou": 0.9936135419428975
+        },
+        {
+          "name": "0003.jpg",
+          "reference_count": 2,
+          "candidate_count": 2,
+          "count_match": true,
+          "ious": [
+            0.9969254589692546,
+            0.9880738189482342
+          ],
+          "paired_ious": [
+            0.9969254589692546,
+            0.9880738189482342
+          ],
+          "union_iou": 0.99697337899039
+        },
+        {
+          "name": "0004.jpg",
+          "reference_count": 2,
+          "candidate_count": 2,
+          "count_match": true,
+          "ious": [
+            0.9933117630453193,
+            0.9863420123791499
+          ],
+          "paired_ious": [
+            0.9933117630453193,
+            0.9863420123791499
+          ],
+          "union_iou": 0.9934461805555556
+        },
+        {
+          "name": "0005.jpg",
+          "reference_count": 2,
+          "candidate_count": 2,
+          "count_match": true,
+          "ious": [
+            0.9950955085183273,
+            0.9806185981120707
+          ],
+          "paired_ious": [
+            0.9950955085183273,
+            0.9806185981120707
+          ],
+          "union_iou": 0.9953127351695371
+        },
+        {
+          "name": "0006.jpg",
+          "reference_count": 2,
+          "candidate_count": 3,
+          "count_match": false,
+          "ious": [
+            0.9908558489908776,
+            0.9792202651889966,
+            0.0
+          ],
+          "paired_ious": [
+            0.9908558489908776,
+            0.9792202651889966
+          ],
+          "union_iou": 0.9910345127736432
+        },
+        {
+          "name": "0007.jpg",
+          "reference_count": 2,
+          "candidate_count": 3,
+          "count_match": false,
+          "ious": [
+            0.9961424657534247,
+            0.9816002784822716,
+            0.0
+          ],
+          "paired_ious": [
+            0.9961424657534247,
+            0.9816002784822716
+          ],
+          "union_iou": 0.9964953782801069
+        },
+        {
+          "name": "0008.jpg",
+          "reference_count": 3,
+          "candidate_count": 2,
+          "count_match": false,
+          "ious": [
+            0.9958477964761193,
+            0.9906341163826193,
+            0.0
+          ],
+          "paired_ious": [
+            0.9958477964761193,
+            0.9906341163826193
+          ],
+          "union_iou": 0.996970827754242
+        },
+        {
+          "name": "0009.jpg",
+          "reference_count": 2,
+          "candidate_count": 3,
+          "count_match": false,
+          "ious": [
+            0.9861162434672438,
+            0.9838623035946104,
+            0.0
+          ],
+          "paired_ious": [
+            0.9861162434672438,
+            0.9838623035946104
+          ],
+          "union_iou": 0.9843232847302978
+        },
+        {
+          "name": "0010.jpg",
+          "reference_count": 2,
+          "candidate_count": 2,
+          "count_match": true,
+          "ious": [
+            0.9905167545180723,
+            0.9801236749116607
+          ],
+          "paired_ious": [
+            0.9905167545180723,
+            0.9801236749116607
+          ],
+          "union_iou": 0.9908781003879158
+        },
+        {
+          "name": "0011.jpg",
+          "reference_count": 2,
+          "candidate_count": 2,
+          "count_match": true,
+          "ious": [
+            0.989464199071186,
+            0.9878538177537589
+          ],
+          "paired_ious": [
+            0.989464199071186,
+            0.9878538177537589
+          ],
+          "union_iou": 0.9899455769762937
+        },
+        {
+          "name": "0012.jpg",
+          "reference_count": 2,
+          "candidate_count": 3,
+          "count_match": false,
+          "ious": [
+            0.9961832884097035,
+            0.9732133728657602,
+            0.0
+          ],
+          "paired_ious": [
+            0.9961832884097035,
+            0.9732133728657602
+          ],
+          "union_iou": 0.9962282044097679
+        },
+        {
+          "name": "0013.jpg",
+          "reference_count": 2,
+          "candidate_count": 3,
+          "count_match": false,
+          "ious": [
+            0.9949452401010952,
+            0.9732853840226047,
+            0.0
+          ],
+          "paired_ious": [
+            0.9949452401010952,
+            0.9732853840226047
+          ],
+          "union_iou": 0.9954401576023197
+        },
+        {
+          "name": "0014.jpg",
+          "reference_count": 2,
+          "candidate_count": 3,
+          "count_match": false,
+          "ious": [
+            0.9950489504222954,
+            0.9861941285374239,
+            0.0
+          ],
+          "paired_ious": [
+            0.9950489504222954,
+            0.9861941285374239
+          ],
+          "union_iou": 0.9957705820484705
+        },
+        {
+          "name": "0015.jpg",
+          "reference_count": 2,
+          "candidate_count": 2,
+          "count_match": true,
+          "ious": [
+            0.9948336665244053,
+            0.9927030625832224
+          ],
+          "paired_ious": [
+            0.9948336665244053,
+            0.9927030625832224
+          ],
+          "union_iou": 0.9949534596837502
+        },
+        {
+          "name": "0016.jpg",
+          "reference_count": 2,
+          "candidate_count": 2,
+          "count_match": true,
+          "ious": [
+            0.9968578161822467,
+            0.9535948710120592
+          ],
+          "paired_ious": [
+            0.9968578161822467,
+            0.9535948710120592
+          ],
+          "union_iou": 0.996534135495684
+        },
+        {
+          "name": "0017.jpg",
+          "reference_count": 2,
+          "candidate_count": 2,
+          "count_match": true,
+          "ious": [
+            0.996727073036793,
+            0.9775683032563767
+          ],
+          "paired_ious": [
+            0.996727073036793,
+            0.9775683032563767
+          ],
+          "union_iou": 0.9968830940778788
+        },
+        {
+          "name": "0018.jpg",
+          "reference_count": 3,
+          "candidate_count": 3,
+          "count_match": true,
+          "ious": [
+            0.9952553542009884,
+            0.9770548939878013,
+            0.9655402287062202
+          ],
+          "paired_ious": [
+            0.9952553542009884,
+            0.9770548939878013,
+            0.9655402287062202
+          ],
+          "union_iou": 0.9962835660580022
+        },
+        {
+          "name": "0019.jpg",
+          "reference_count": 3,
+          "candidate_count": 3,
+          "count_match": true,
+          "ious": [
+            0.9962486368593239,
+            0.9797259766709868,
+            0.9650015417823004
+          ],
+          "paired_ious": [
+            0.9962486368593239,
+            0.9797259766709868,
+            0.9650015417823004
+          ],
+          "union_iou": 0.9967686019388389
+        },
+        {
+          "name": "0020.jpg",
+          "reference_count": 4,
+          "candidate_count": 3,
+          "count_match": false,
+          "ious": [
+            0.9957885596439814,
+            0.9846972721224219,
+            0.9718570254724733,
+            0.0
+          ],
+          "paired_ious": [
+            0.9957885596439814,
+            0.9846972721224219,
+            0.9718570254724733
+          ],
+          "union_iou": 0.9829602548478823
+        },
+        {
+          "name": "0021.jpg",
+          "reference_count": 2,
+          "candidate_count": 2,
+          "count_match": true,
+          "ious": [
+            0.9955635000969139,
+            0.9731983929207141
+          ],
+          "paired_ious": [
+            0.9955635000969139,
+            0.9731983929207141
+          ],
+          "union_iou": 0.9957814988592829
+        },
+        {
+          "name": "0022.jpg",
+          "reference_count": 2,
+          "candidate_count": 2,
+          "count_match": true,
+          "ious": [
+            0.9951033970183185,
+            0.9771876762187932
+          ],
+          "paired_ious": [
+            0.9951033970183185,
+            0.9771876762187932
+          ],
+          "union_iou": 0.9955243106346746
+        },
+        {
+          "name": "0023.jpg",
+          "reference_count": 2,
+          "candidate_count": 2,
+          "count_match": true,
+          "ious": [
+            0.9961508520024219,
+            0.9794202599546111
+          ],
+          "paired_ious": [
+            0.9961508520024219,
+            0.9794202599546111
+          ],
+          "union_iou": 0.9961335752548817
+        },
+        {
+          "name": "0024.jpg",
+          "reference_count": 4,
+          "candidate_count": 2,
+          "count_match": false,
+          "ious": [
+            0.9956449651818282,
+            0.9739273249846028,
+            0.0,
+            0.0
+          ],
+          "paired_ious": [
+            0.9956449651818282,
+            0.9739273249846028
+          ],
+          "union_iou": 0.9710422632247508
+        },
+        {
+          "name": "0025.jpg",
+          "reference_count": 2,
+          "candidate_count": 2,
+          "count_match": true,
+          "ious": [
+            0.9943679599499374,
+            0.9725908089553769
+          ],
+          "paired_ious": [
+            0.9943679599499374,
+            0.9725908089553769
+          ],
+          "union_iou": 0.9942849748754555
+        },
+        {
+          "name": "0026.jpg",
+          "reference_count": 2,
+          "candidate_count": 2,
+          "count_match": true,
+          "ious": [
+            0.9944056243837613,
+            0.9776735650932816
+          ],
+          "paired_ious": [
+            0.9944056243837613,
+            0.9776735650932816
+          ],
+          "union_iou": 0.9941947645773531
+        },
+        {
+          "name": "0027.jpg",
+          "reference_count": 3,
+          "candidate_count": 3,
+          "count_match": true,
+          "ious": [
+            0.9955054715997915,
+            0.991503063369259,
+            0.9835263835263836
+          ],
+          "paired_ious": [
+            0.9955054715997915,
+            0.991503063369259,
+            0.9835263835263836
+          ],
+          "union_iou": 0.9946344301506238
+        },
+        {
+          "name": "0028.jpg",
+          "reference_count": 2,
+          "candidate_count": 2,
+          "count_match": true,
+          "ious": [
+            0.9964701268139626,
+            0.9640062597809077
+          ],
+          "paired_ious": [
+            0.9964701268139626,
+            0.9640062597809077
+          ],
+          "union_iou": 0.9966062610133356
+        },
+        {
+          "name": "0029.jpg",
+          "reference_count": 2,
+          "candidate_count": 2,
+          "count_match": true,
+          "ious": [
+            0.9955696749654218,
+            0.990006801653325
+          ],
+          "paired_ious": [
+            0.9955696749654218,
+            0.990006801653325
+          ],
+          "union_iou": 0.9960488815959927
+        },
+        {
+          "name": "0030.jpg",
+          "reference_count": 3,
+          "candidate_count": 3,
+          "count_match": true,
+          "ious": [
+            0.9890334209211926,
+            0.974001430176729,
+            0.9703296703296703
+          ],
+          "paired_ious": [
+            0.9890334209211926,
+            0.974001430176729,
+            0.9703296703296703
+          ],
+          "union_iou": 0.9889215077035164
+        },
+        {
+          "name": "0031.jpg",
+          "reference_count": 2,
+          "candidate_count": 3,
+          "count_match": false,
+          "ious": [
+            0.9949942822620665,
+            0.9836823912159415,
+            0.0
+          ],
+          "paired_ious": [
+            0.9949942822620665,
+            0.9836823912159415
+          ],
+          "union_iou": 0.9948480275921535
+        },
+        {
+          "name": "0032.jpg",
+          "reference_count": 3,
+          "candidate_count": 2,
+          "count_match": false,
+          "ious": [
+            0.9953332048894312,
+            0.977061687496863,
+            0.0
+          ],
+          "paired_ious": [
+            0.9953332048894312,
+            0.977061687496863
+          ],
+          "union_iou": 0.9756332426208918
+        },
+        {
+          "name": "0033.jpg",
+          "reference_count": 3,
+          "candidate_count": 2,
+          "count_match": false,
+          "ious": [
+            0.9952236120630569,
+            0.9760760710131,
+            0.0
+          ],
+          "paired_ious": [
+            0.9952236120630569,
+            0.9760760710131
+          ],
+          "union_iou": 0.980694330406956
+        },
+        {
+          "name": "0034.jpg",
+          "reference_count": 2,
+          "candidate_count": 3,
+          "count_match": false,
+          "ious": [
+            0.9968413588603107,
+            0.9822788590771069,
+            0.0
+          ],
+          "paired_ious": [
+            0.9968413588603107,
+            0.9822788590771069
+          ],
+          "union_iou": 0.9967593089387273
+        },
+        {
+          "name": "0035.jpg",
+          "reference_count": 2,
+          "candidate_count": 2,
+          "count_match": true,
+          "ious": [
+            0.997740603953943,
+            0.9896257119609438
+          ],
+          "paired_ious": [
+            0.997740603953943,
+            0.9896257119609438
+          ],
+          "union_iou": 0.9980029955067399
+        },
+        {
+          "name": "0036.jpg",
+          "reference_count": 2,
+          "candidate_count": 2,
+          "count_match": true,
+          "ious": [
+            0.993933109777621,
+            0.9840019689884322
+          ],
+          "paired_ious": [
+            0.993933109777621,
+            0.9840019689884322
+          ],
+          "union_iou": 0.9942251316978553
+        },
+        {
+          "name": "0037.jpg",
+          "reference_count": 3,
+          "candidate_count": 3,
+          "count_match": true,
+          "ious": [
+            0.9958970533383066,
+            0.9912024934647095,
+            0.9906490889978977
+          ],
+          "paired_ious": [
+            0.9958970533383066,
+            0.9912024934647095,
+            0.9906490889978977
+          ],
+          "union_iou": 0.99087886609213
+        },
+        {
+          "name": "0038.jpg",
+          "reference_count": 2,
+          "candidate_count": 2,
+          "count_match": true,
+          "ious": [
+            0.9787319138924833,
+            0.9745309773123909
+          ],
+          "paired_ious": [
+            0.9787319138924833,
+            0.9745309773123909
+          ],
+          "union_iou": 0.9792494066223298
+        },
+        {
+          "name": "0039.jpg",
+          "reference_count": 3,
+          "candidate_count": 3,
+          "count_match": true,
+          "ious": [
+            0.9899462183245312,
+            0.9809281267685342,
+            0.8575448769880186
+          ],
+          "paired_ious": [
+            0.9899462183245312,
+            0.9809281267685342,
+            0.8575448769880186
+          ],
+          "union_iou": 0.8817643802954827
+        },
+        {
+          "name": "0040.jpg",
+          "reference_count": 3,
+          "candidate_count": 2,
+          "count_match": false,
+          "ious": [
+            0.989159499891595,
+            0.9760212662073455,
+            0.0
+          ],
+          "paired_ious": [
+            0.989159499891595,
+            0.9760212662073455
+          ],
+          "union_iou": 0.9553146238845994
+        }
+      ]
+    },
+    "qat2_int8": {
+      "count_agreement": 0.1,
+      "median_mask_iou": 0.9415311529325782,
+      "median_paired_mask_iou": 0.9763724529820621,
+      "median_union_mask_iou": 0.978492028139059,
+      "mask_pairs": 177,
+      "per_frame": [
+        {
+          "name": "0001.jpg",
+          "reference_count": 3,
+          "candidate_count": 4,
+          "count_match": false,
+          "ious": [
+            0.9891204880528724,
+            0.9801292793871199,
+            0.9247506001013015,
+            0.0
+          ],
+          "paired_ious": [
+            0.9891204880528724,
+            0.9801292793871199,
+            0.9247506001013015
+          ],
+          "union_iou": 0.9857392128562504
+        },
+        {
+          "name": "0002.jpg",
+          "reference_count": 3,
+          "candidate_count": 4,
+          "count_match": false,
+          "ious": [
+            0.9743396058741196,
+            0.9664053751399776,
+            0.8949015007088038,
+            0.0
+          ],
+          "paired_ious": [
+            0.9743396058741196,
+            0.9664053751399776,
+            0.8949015007088038
+          ],
+          "union_iou": 0.9704986968615169
+        },
+        {
+          "name": "0003.jpg",
+          "reference_count": 2,
+          "candidate_count": 3,
+          "count_match": false,
+          "ious": [
+            0.9825139998671949,
+            0.9810312034133553,
+            0.0
+          ],
+          "paired_ious": [
+            0.9825139998671949,
+            0.9810312034133553
+          ],
+          "union_iou": 0.9825833259658739
+        },
+        {
+          "name": "0004.jpg",
+          "reference_count": 2,
+          "candidate_count": 3,
+          "count_match": false,
+          "ious": [
+            0.9859748266118674,
+            0.9612682165163081,
+            0.0
+          ],
+          "paired_ious": [
+            0.9859748266118674,
+            0.9612682165163081
+          ],
+          "union_iou": 0.9656148080952073
+        },
+        {
+          "name": "0005.jpg",
+          "reference_count": 2,
+          "candidate_count": 4,
+          "count_match": false,
+          "ious": [
+            0.9817584823057278,
+            0.9811550151975684,
+            0.0,
+            0.0
+          ],
+          "paired_ious": [
+            0.9817584823057278,
+            0.9811550151975684
+          ],
+          "union_iou": 0.9835282525810736
+        },
+        {
+          "name": "0006.jpg",
+          "reference_count": 2,
+          "candidate_count": 3,
+          "count_match": false,
+          "ious": [
+            0.9853627539058221,
+            0.9656711975394384,
+            0.0
+          ],
+          "paired_ious": [
+            0.9853627539058221,
+            0.9656711975394384
+          ],
+          "union_iou": 0.9820698059012969
+        },
+        {
+          "name": "0007.jpg",
+          "reference_count": 2,
+          "candidate_count": 4,
+          "count_match": false,
+          "ious": [
+            0.9806284787658325,
+            0.9594560940379538,
+            0.0,
+            0.0
+          ],
+          "paired_ious": [
+            0.9806284787658325,
+            0.9594560940379538
+          ],
+          "union_iou": 0.9788568317909635
+        },
+        {
+          "name": "0008.jpg",
+          "reference_count": 3,
+          "candidate_count": 3,
+          "count_match": true,
+          "ious": [
+            0.9836132942929059,
+            0.9747623011873987,
+            0.42818234275822276
+          ],
+          "paired_ious": [
+            0.9836132942929059,
+            0.9747623011873987,
+            0.42818234275822276
+          ],
+          "union_iou": 0.9859407455996502
+        },
+        {
+          "name": "0009.jpg",
+          "reference_count": 2,
+          "candidate_count": 4,
+          "count_match": false,
+          "ious": [
+            0.9853851077448261,
+            0.9836726421043149,
+            0.0,
+            0.0
+          ],
+          "paired_ious": [
+            0.9853851077448261,
+            0.9836726421043149
+          ],
+          "union_iou": 0.9817443769131804
+        },
+        {
+          "name": "0010.jpg",
+          "reference_count": 2,
+          "candidate_count": 5,
+          "count_match": false,
+          "ious": [
+            0.9741255654860421,
+            0.9622637170583637,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "paired_ious": [
+            0.9741255654860421,
+            0.9622637170583637
+          ],
+          "union_iou": 0.9645046198883909
+        },
+        {
+          "name": "0011.jpg",
+          "reference_count": 2,
+          "candidate_count": 5,
+          "count_match": false,
+          "ious": [
+            0.9879784366576819,
+            0.9758057026098264,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "paired_ious": [
+            0.9879784366576819,
+            0.9758057026098264
+          ],
+          "union_iou": 0.9762201597635868
+        },
+        {
+          "name": "0012.jpg",
+          "reference_count": 2,
+          "candidate_count": 4,
+          "count_match": false,
+          "ious": [
+            0.9733465808458249,
+            0.9680499638691029,
+            0.0,
+            0.0
+          ],
+          "paired_ious": [
+            0.9733465808458249,
+            0.9680499638691029
+          ],
+          "union_iou": 0.9790056200340217
+        },
+        {
+          "name": "0013.jpg",
+          "reference_count": 2,
+          "candidate_count": 5,
+          "count_match": false,
+          "ious": [
+            0.9793638479441428,
+            0.9790192783869827,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "paired_ious": [
+            0.9793638479441428,
+            0.9790192783869827
+          ],
+          "union_iou": 0.9796849179244244
+        },
+        {
+          "name": "0014.jpg",
+          "reference_count": 2,
+          "candidate_count": 7,
+          "count_match": false,
+          "ious": [
+            0.9863166339811018,
+            0.9528100421896973,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "paired_ious": [
+            0.9863166339811018,
+            0.9528100421896973
+          ],
+          "union_iou": 0.9728099318062599
+        },
+        {
+          "name": "0015.jpg",
+          "reference_count": 2,
+          "candidate_count": 4,
+          "count_match": false,
+          "ious": [
+            0.9806993156544055,
+            0.9641401976453639,
+            0.0,
+            0.0
+          ],
+          "paired_ious": [
+            0.9806993156544055,
+            0.9641401976453639
+          ],
+          "union_iou": 0.9662553286964326
+        },
+        {
+          "name": "0016.jpg",
+          "reference_count": 2,
+          "candidate_count": 5,
+          "count_match": false,
+          "ious": [
+            0.9781184486373166,
+            0.9724101757146604,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "paired_ious": [
+            0.9781184486373166,
+            0.9724101757146604
+          ],
+          "union_iou": 0.9675548923470475
+        },
+        {
+          "name": "0017.jpg",
+          "reference_count": 2,
+          "candidate_count": 4,
+          "count_match": false,
+          "ious": [
+            0.9710399683592977,
+            0.9686523587563387,
+            0.0,
+            0.0
+          ],
+          "paired_ious": [
+            0.9710399683592977,
+            0.9686523587563387
+          ],
+          "union_iou": 0.9726527489343098
+        },
+        {
+          "name": "0018.jpg",
+          "reference_count": 3,
+          "candidate_count": 5,
+          "count_match": false,
+          "ious": [
+            0.9866920152091255,
+            0.9836494297079313,
+            0.9401522359657469,
+            0.0,
+            0.0
+          ],
+          "paired_ious": [
+            0.9866920152091255,
+            0.9836494297079313,
+            0.9401522359657469
+          ],
+          "union_iou": 0.9867801831094378
+        },
+        {
+          "name": "0019.jpg",
+          "reference_count": 3,
+          "candidate_count": 6,
+          "count_match": false,
+          "ious": [
+            0.9776567944250871,
+            0.969247637445831,
+            0.9456785682165663,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "paired_ious": [
+            0.9776567944250871,
+            0.969247637445831,
+            0.9456785682165663
+          ],
+          "union_iou": 0.9896397356640375
+        },
+        {
+          "name": "0020.jpg",
+          "reference_count": 4,
+          "candidate_count": 4,
+          "count_match": true,
+          "ious": [
+            0.9841443127469328,
+            0.9792893621645116,
+            0.9755361746475782,
+            0.173043384648509
+          ],
+          "paired_ious": [
+            0.9841443127469328,
+            0.9792893621645116,
+            0.9755361746475782,
+            0.173043384648509
+          ],
+          "union_iou": 0.9666979562230661
+        },
+        {
+          "name": "0021.jpg",
+          "reference_count": 2,
+          "candidate_count": 5,
+          "count_match": false,
+          "ious": [
+            0.985881795059706,
+            0.9822098822561571,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "paired_ious": [
+            0.985881795059706,
+            0.9822098822561571
+          ],
+          "union_iou": 0.9768680630716665
+        },
+        {
+          "name": "0022.jpg",
+          "reference_count": 2,
+          "candidate_count": 5,
+          "count_match": false,
+          "ious": [
+            0.9845153094747908,
+            0.9648329956885356,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "paired_ious": [
+            0.9845153094747908,
+            0.9648329956885356
+          ],
+          "union_iou": 0.9698638877073585
+        },
+        {
+          "name": "0023.jpg",
+          "reference_count": 2,
+          "candidate_count": 4,
+          "count_match": false,
+          "ious": [
+            0.9862437707641196,
+            0.9854758761012143,
+            0.0,
+            0.0
+          ],
+          "paired_ious": [
+            0.9862437707641196,
+            0.9854758761012143
+          ],
+          "union_iou": 0.9749550502379694
+        },
+        {
+          "name": "0024.jpg",
+          "reference_count": 4,
+          "candidate_count": 4,
+          "count_match": true,
+          "ious": [
+            0.9746959698969297,
+            0.973388148442853,
+            0.970785465509175,
+            0.9647006255585344
+          ],
+          "paired_ious": [
+            0.9746959698969297,
+            0.973388148442853,
+            0.970785465509175,
+            0.9647006255585344
+          ],
+          "union_iou": 0.9850106605216118
+        },
+        {
+          "name": "0025.jpg",
+          "reference_count": 2,
+          "candidate_count": 6,
+          "count_match": false,
+          "ious": [
+            0.9851607584501236,
+            0.9752616555661275,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "paired_ious": [
+            0.9851607584501236,
+            0.9752616555661275
+          ],
+          "union_iou": 0.9658589144993979
+        },
+        {
+          "name": "0026.jpg",
+          "reference_count": 2,
+          "candidate_count": 3,
+          "count_match": false,
+          "ious": [
+            0.9822615274511809,
+            0.9644517774111294,
+            0.0
+          ],
+          "paired_ious": [
+            0.9822615274511809,
+            0.9644517774111294
+          ],
+          "union_iou": 0.9672267651642932
+        },
+        {
+          "name": "0027.jpg",
+          "reference_count": 3,
+          "candidate_count": 4,
+          "count_match": false,
+          "ious": [
+            0.9909175835582312,
+            0.97180557367071,
+            0.9425883515200503,
+            0.0
+          ],
+          "paired_ious": [
+            0.9909175835582312,
+            0.97180557367071,
+            0.9425883515200503
+          ],
+          "union_iou": 0.9781272244871546
+        },
+        {
+          "name": "0028.jpg",
+          "reference_count": 2,
+          "candidate_count": 7,
+          "count_match": false,
+          "ious": [
+            0.9819114178765389,
+            0.9626801948867346,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "paired_ious": [
+            0.9819114178765389,
+            0.9626801948867346
+          ],
+          "union_iou": 0.9892675131726699
+        },
+        {
+          "name": "0029.jpg",
+          "reference_count": 2,
+          "candidate_count": 5,
+          "count_match": false,
+          "ious": [
+            0.9832288740004322,
+            0.9816897724300288,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "paired_ious": [
+            0.9832288740004322,
+            0.9816897724300288
+          ],
+          "union_iou": 0.9754631203263087
+        },
+        {
+          "name": "0030.jpg",
+          "reference_count": 3,
+          "candidate_count": 5,
+          "count_match": false,
+          "ious": [
+            0.9815589648225631,
+            0.9723121726468607,
+            0.9415311529325782,
+            0.0,
+            0.0
+          ],
+          "paired_ious": [
+            0.9815589648225631,
+            0.9723121726468607,
+            0.9415311529325782
+          ],
+          "union_iou": 0.9804995524487448
+        },
+        {
+          "name": "0031.jpg",
+          "reference_count": 2,
+          "candidate_count": 4,
+          "count_match": false,
+          "ious": [
+            0.9887962347163247,
+            0.9884220758181229,
+            0.0,
+            0.0
+          ],
+          "paired_ious": [
+            0.9887962347163247,
+            0.9884220758181229
+          ],
+          "union_iou": 0.9790022338049144
+        },
+        {
+          "name": "0032.jpg",
+          "reference_count": 3,
+          "candidate_count": 4,
+          "count_match": false,
+          "ious": [
+            0.9800347408376402,
+            0.9733975171015962,
+            0.9344653412144008,
+            0.0
+          ],
+          "paired_ious": [
+            0.9800347408376402,
+            0.9733975171015962,
+            0.9344653412144008
+          ],
+          "union_iou": 0.9655548105933623
+        },
+        {
+          "name": "0033.jpg",
+          "reference_count": 3,
+          "candidate_count": 6,
+          "count_match": false,
+          "ious": [
+            0.9837845942935481,
+            0.9680402418576292,
+            0.944608023555392,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "paired_ious": [
+            0.9837845942935481,
+            0.9680402418576292,
+            0.944608023555392
+          ],
+          "union_iou": 0.9924819924819925
+        },
+        {
+          "name": "0034.jpg",
+          "reference_count": 2,
+          "candidate_count": 4,
+          "count_match": false,
+          "ious": [
+            0.9791728800079531,
+            0.9780359255673873,
+            0.0,
+            0.0
+          ],
+          "paired_ious": [
+            0.9791728800079531,
+            0.9780359255673873
+          ],
+          "union_iou": 0.9817091454272864
+        },
+        {
+          "name": "0035.jpg",
+          "reference_count": 2,
+          "candidate_count": 3,
+          "count_match": false,
+          "ious": [
+            0.9859549132359676,
+            0.9826173869586946,
+            0.0
+          ],
+          "paired_ious": [
+            0.9859549132359676,
+            0.9826173869586946
+          ],
+          "union_iou": 0.98417556655379
+        },
+        {
+          "name": "0036.jpg",
+          "reference_count": 2,
+          "candidate_count": 2,
+          "count_match": true,
+          "ious": [
+            0.9869958413096575,
+            0.97426525067918
+          ],
+          "paired_ious": [
+            0.9869958413096575,
+            0.97426525067918
+          ],
+          "union_iou": 0.9889861062258178
+        },
+        {
+          "name": "0037.jpg",
+          "reference_count": 3,
+          "candidate_count": 4,
+          "count_match": false,
+          "ious": [
+            0.9804622589254243,
+            0.9774511884550084,
+            0.9723611476704396,
+            0.0
+          ],
+          "paired_ious": [
+            0.9804622589254243,
+            0.9774511884550084,
+            0.9723611476704396
+          ],
+          "union_iou": 0.9728320406643004
+        },
+        {
+          "name": "0038.jpg",
+          "reference_count": 2,
+          "candidate_count": 5,
+          "count_match": false,
+          "ious": [
+            0.9874693695700602,
+            0.9769392033542977,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "paired_ious": [
+            0.9874693695700602,
+            0.9769392033542977
+          ],
+          "union_iou": 0.9808176848110293
+        },
+        {
+          "name": "0039.jpg",
+          "reference_count": 3,
+          "candidate_count": 4,
+          "count_match": false,
+          "ious": [
+            0.975204770978199,
+            0.9736033678461713,
+            0.912259063097052,
+            0.0
+          ],
+          "paired_ious": [
+            0.975204770978199,
+            0.9736033678461713,
+            0.912259063097052
+          ],
+          "union_iou": 0.9628550092742033
+        },
+        {
+          "name": "0040.jpg",
+          "reference_count": 3,
+          "candidate_count": 7,
+          "count_match": false,
+          "ious": [
+            0.9699657088802176,
+            0.9619872574987473,
+            0.9609125804184462,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "paired_ious": [
+            0.9699657088802176,
+            0.9619872574987473,
+            0.9609125804184462
+          ],
+          "union_iou": 0.9718909132058391
+        }
+      ]
+    }
+  }
+}
