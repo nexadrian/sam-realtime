@@ -88,6 +88,27 @@ description = "FastSAM small checkpoint via Ultralytics, using the center point 
 source = "https://github.com/CASIA-LMC-Lab/FastSAM"
 notes = "Requires ultralytics. Official examples use imgsz=1024, but this adapter uses the current app resolution for speed."
 
+[models.fastsam_s_float_tflite]
+type = "fastsam_tflite"
+backend = "cpu"
+status = "implemented-needs-dependency"
+model_path = "../models/fastsam_litert/FastSAM-s_512_float.tflite"
+description = "Original floating-point FastSAM-s LiteRT model at 512x512."
+
+[models.fastsam_s_ptq_tflite]
+type = "fastsam_tflite"
+backend = "cpu"
+status = "implemented-needs-dependency"
+model_path = "../models/fastsam_litert/FastSAM-s_512_int8.tflite"
+description = "Stock post-training INT8 FastSAM-s LiteRT model at 512x512."
+
+[models.fastsam_s_qat_tflite]
+type = "fastsam_tflite"
+backend = "cpu"
+status = "implemented-needs-dependency"
+model_path = "../models/fastsam_litert/FastSAM-s_512_qat.tflite"
+description = "Direct-QAT INT8 FastSAM-s LiteRT model with repaired requantization."
+
 # Source repo: https://github.com/NVIDIA-AI-IOT/nanosam
 # NVIDIA README links ONNX source files through Google Drive:
 #   https://drive.google.com/file/d/1jYNvnseTL49SNRx9PDcbkZ9DwsY8up7n/view

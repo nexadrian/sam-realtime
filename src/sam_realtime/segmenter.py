@@ -53,4 +53,8 @@ def build_segmenter(model: ModelEntry, backend: BackendSelection | None = None) 
         from .segmenters.fastsam import FastSamSegmenter
 
         return FastSamSegmenter(model, backend)
+    if model.type == "fastsam_tflite":
+        from .segmenters.fastsam_tflite import FastSamTFLiteSegmenter
+
+        return FastSamTFLiteSegmenter(model, backend)
     raise ValueError(f"Unsupported model type {model.type!r}")

@@ -92,6 +92,6 @@ download \
   "Original SAM ViT-B checkpoint"
 
 download \
-  "https://github.com/ultralytics/assets/releases/download/v8.2.0/FastSAM-s.pt" \
+  "https://github.com/ultralytics/assets/releases/download/v8.4.0/FastSAM-s.pt" \
   "$MODELS_DIR/FastSAM-s.pt" \
   "FastSAM-s checkpoint"

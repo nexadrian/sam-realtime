@@ -36,7 +36,9 @@ def main(argv: list[str] | None = None) -> int:
         return 0
 
     model = select_model(config, args.model)
-    backend = select_backend(config.backend_priority, args.backend)
+    # LiteRT's interpreter runs on CPU here, even when PyTorch MPS is present.
+    requested_backend = args.backend or ("cpu" if model.type == "fastsam_tflite" else None)
+    backend = select_backend(config.backend_priority, requested_backend)
 
     logger.info("Selected backend: %s (%s) via %s", backend.name, backend.provider, backend.reason)
     if model.paths:

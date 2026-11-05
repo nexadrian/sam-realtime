@@ -1,0 +1,9 @@
+.venv/
+.pytest_cache/
+__pycache__/
+*.py[cod]
+captures/
+models/
+/PLAN.md
+/fastsam-qat/results/
+/fastsam-qat/COUNT_AGREEMENT_RESEARCH.md
